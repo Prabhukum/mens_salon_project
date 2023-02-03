@@ -8,6 +8,7 @@
       <link href="login.css" rel="stylesheet">
       <script src="jquery.min.js"></script>
       <script src="jquery-ui.min.js"></script>
+      <script src="index.js"></script>
    </head>
    <body>
         <div class="content">
