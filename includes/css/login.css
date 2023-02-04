@@ -50,21 +50,39 @@ hr {
   opacity: 0.15;
 }
 
-.content {
-  background: -webkit-linear-gradient(bottom, #b0b8ac, #66a564);
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 900px;
-  z-index:-1;
+@media (min-width: 300px) {
+  .content {
+    background: -webkit-linear-gradient(bottom, #b0b8ac, #000000);
+    background-repeat: no-repeat;
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+  }
 }
 
+@media (max-width: 600px) {
+  .content {
+    background: -webkit-linear-gradient(bottom, #13285e, #5465ff);
+    background-repeat: no-repeat;
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+  }
+}
 .container {
-  background: -webkit-linear-gradient(bottom, #13285e, #27c5ff);
+  background: -webkit-linear-gradient(bottom, #13285e, #5465ff);
   background-repeat: no-repeat;
   display: block;
   position: relative;
@@ -89,9 +107,9 @@ img.bg-img {
 
 .menu h2 {
   display: inline;
-  margin: 20px;
+  margin: 40px;
   padding-bottom: 3px;
-  border-bottom: 3px solid #1161ee;
+  border-bottom: 3px solid #b0bdd4;
 }
 a:not(.active) {
   cursor:inherit;
@@ -146,7 +164,7 @@ input {
     border: 0;
     border-radius: 20px;
     font-family: "Roboto",sans-serif;
-    opacity: 0.15;
+    opacity: 0.5;
 }
 
 input p {
@@ -154,7 +172,7 @@ input p {
     opacity: 1;
 }
 
-input.submit {
+/* .login-box input {
     width: 100%;
     padding: 10px;
     font-size: 17px;
@@ -163,7 +181,7 @@ input.submit {
     opacity: 1;
     background-color: #1161EE;
     cursor: pointer;
-}
+} */
 
 .check label {
     float: left;
@@ -216,4 +234,54 @@ input.submit {
 .remove-section {
     position: absolute;
     left: 500px;
+}
+
+.login-box input {
+  position: relative;
+  display: inline-block;
+  padding: 20px 20px;
+  color: #f6f6f6;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+
+/* ----------------------------- */
+
+.login-box input {
+  position: relative;
+  display: inline-block;
+  padding: 10px 10px;
+  color: #101010;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 15px;
+  letter-spacing: 2px;
+  opacity: 1;
+}
+
+.login-box input:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+.card-body {
+  position: absolute;
+  padding: 15% 13%;
+  width: 74%;
+  right:0px;
+  transition: all 0.7s;
 }

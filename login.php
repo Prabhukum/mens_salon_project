@@ -8,7 +8,7 @@
     else if($_POST["username-ver"] && $_POST["password-ver"])
 	{
 		$username = $_POST["username-ver"];
-		$password = $_POST["password-ver"];
+		$password = md5(sha1($_POST["password-ver"]));
 		
 		$userData = login($username, $password);
 
@@ -24,7 +24,7 @@
 	}
     else if ($_POST["username-res"] && $_POST["password-res"] && $_POST["email-res"] && $_POST["phone-res"]) {
         $username = $_POST["username-res"];
-		$password = $_POST["password-res"];
+		$password = md5(sha1($_POST["password-res"]));
         $email = $_POST["email-res"];
         $phone = $_POST["phone-res"];
 
@@ -58,18 +58,18 @@
 
             <div class="menu">
                 <a href="#connexion" class="btn-connexion">
-                    <h2>SIGN IN</h2>
+                    <h2>Login</h2>
                 </a>
                 <a href="#enregistrer" class="btn-enregistrer active">
-                    <h2>SIGN UP</h2>
+                    <h2>Register</h2>
                 </a>
             </div>
             <div class="connexion">
             <div class="contact-form">
                 <form method="POST" id="login">
-                    <label>USERNAME</label>
+                    <label>Username</label>
                     <input type="text" id="username" name="username-ver">
-                    <label>PASSWORD</label>
+                    <label>Password</label>
                     <input type="password" id="password" name="password-ver">
 
                     <div class="check">
@@ -85,30 +85,30 @@
                     <h3>Keep me signed in</h3>
                     
                     </div>
-                    <input class="submit" value="SIGN IN" type="submit">
-
+                    <div class="login-box">
+                        <input class="submit" value="SIGN IN" type="submit">
+                    </div>
                     <br>
                     <?php echo $error; ?>
                     <?php echo $error_res; ?>
                     <br>
-                    <br>
                 </form>
                 </div>
                 <hr>
-                <a href="#" target="_blank">
+                <a href="forget-password.php" target="_blank">
                     <h4>Forgot password?</h4>
                 </a>
             </div>
             <div class="enregistrer active-section">
                 <div class="contact-form">
                 <form method="POST" id="register">
-                    <label>USERNAME</label>
+                    <label>Username</label>
                     <input placeholder="" type="text" name="username-res">
-                    <label>E-MAIL</label>
+                    <label>E-mail</label>
                     <input placeholder="" type="text" name="email-res">
-                    <label>PHONE</label>
+                    <label>Phone</label>
                     <input placeholder="" type="text" name="phone-res">
-                    <label>PASSWORD</label>
+                    <label>Password</label>
                     <input type="password" placeholder="" name="password-res">
                     <div class="check">
                     <label>
@@ -122,8 +122,9 @@
                     </label>
                     <h3>I agree</h3>
                     </div>
+                    <div class="login-box">
                     <input class="submit" value="SIGN UP" type="submit">
-                    
+                    </div>
                     <?php echo $error_res; ?><br>
                     <br>
                 </form>
