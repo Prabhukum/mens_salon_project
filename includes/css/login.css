@@ -247,7 +247,7 @@ input p {
   overflow: hidden;
   transition: .5s;
   margin-top: 40px;
-  letter-spacing: 4px
+  letter-spacing: 1px
 }
 
 
@@ -264,7 +264,7 @@ input p {
   overflow: hidden;
   transition: .5s;
   margin-top: 15px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   opacity: 1;
 }
 
