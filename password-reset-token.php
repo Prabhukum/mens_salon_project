@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
    <head>
@@ -46,9 +44,11 @@ if(isset($_POST['password-reset-token']) && $_POST['email'])
     $expDate = date("Y-m-d H:i:s",$expFormat);
  
     $update = mysqli_query($dbcon,"UPDATE users set  password='" . $password . "', reset_link_token='" . $token . "' ,exp_date='" . $expDate . "' WHERE email='" . $emailId . "'");
- 
-    $link = "<a href='http://localhost/SS/reset-password.php?key=".$emailId."&token=".$token."'>Click To Reset password</a>";
- 
+      if ($mode == "local") {
+        $link = "<a href='http://localhost/SS/reset-password.php?key=" . $emailId . "&token=" . $token . "'>Click To Reset password</a>";
+      } elseif ($mode == "production") {
+        $link = "<a href='https://sholinghur-saloon.my-style.in/reset-password.php?key=" . $emailId . "&token=" . $token . "'>Click To Reset password</a>";
+      }
     require_once('vendor/autoload.php');
  
     $mail = new PHPMailer();
@@ -71,7 +71,7 @@ if(isset($_POST['password-reset-token']) && $_POST['email'])
     $mail->AddAddress($emailId, 'reciever_name');
     $mail->Subject  =  'Reset Password';
     $mail->IsHTML(true);
-    $mail->Body    = 'Click On This Link to Reset Password '.$link.'';
+    $mail->Body    = 'Use this link to Reset your Password '.$link.'';
     if($mail->Send())
     {
       echo '<p>Check Your Email and Click on the link sent to your email.</p>
