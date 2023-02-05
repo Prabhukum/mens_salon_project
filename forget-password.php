@@ -21,7 +21,7 @@
                   <div class="login-box">
                   <br>
                   <br>
-                    <input type="submit" name="password-reset-token" class="submit">
+                    <input type="submit" value="Get Link" name="password-reset-token" class="submit">
                   </div>
               </form>
               </div>

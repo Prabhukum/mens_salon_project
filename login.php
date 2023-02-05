@@ -95,7 +95,7 @@
                 </form>
                 </div>
                 <hr>
-                <a href="forget-password.php" target="_blank">
+                <a href="forget-password.php">
                     <h4>Forgot password?</h4>
                 </a>
             </div>

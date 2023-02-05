@@ -12,8 +12,7 @@
    <body>
         <div class="content">
         <div class="container">
-        <div class="connexion">
-              
+        <div class="connexion">             
         <?php
             if(isset($_POST['password']) && $_POST['reset_link_token'] && $_POST['email'])
             {
@@ -25,9 +24,13 @@
             $row = mysqli_num_rows($query);
             if($row){
             mysqli_query($dbcon,"UPDATE users set  password='" . $password . "', reset_link_token='" . NULL . "' ,exp_date='" . NULL . "' WHERE email='" . $emailId . "'");
-            echo '<p>Congratulations! Your password has been updated successfully.</p>';
+            echo '<p>Congratulations! Your password has been updated successfully.</p>
+            <br><br><br>
+            <div class="login-box">
+                <a href="login.php"> Goto Login Page</a>
+            </div>';
             }else{
-            echo "<p>Something goes wrong. Please try again</p>";
+            echo '<p>Something goes wrong. Please try again</p>';
             }
             }
         ?>
