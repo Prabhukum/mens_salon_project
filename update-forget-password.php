@@ -8,11 +8,13 @@
       <link href="includes/css/login.css" rel="stylesheet">
       <script src="includes/js/jquery.min.js"></script>
       <script src="includes/js/jquery-ui.min.js"></script>
+      <link rel="icon" href="includes/images/favicon.ico" type="image/x-icon"/>
    </head>
    <body>
         <div class="content">
         <div class="container">
-        <div class="connexion">             
+        <div class="connexion">
+
         <?php
             if(isset($_POST['password']) && $_POST['reset_link_token'] && $_POST['email'])
             {
@@ -27,7 +29,7 @@
             echo '<p>Congratulations! Your password has been updated successfully.</p>
             <br><br><br>
             <div class="login-box">
-                <a href="login.php"> Goto Login Page</a>
+              <a href="login.php"><input type="submit" value="Goto Login Page" class="submit"></a>
             </div>';
             }else{
             echo '<p>Something goes wrong. Please try again</p>';
