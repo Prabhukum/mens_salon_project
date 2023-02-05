@@ -10,6 +10,7 @@
       <link href="includes/css/login.css" rel="stylesheet">
       <script src="includes/js/jquery.min.js"></script>
       <script src="includes/js/jquery-ui.min.js"></script>
+      <link rel="icon" href="includes/images/favicon.ico" type="image/x-icon"/>
    </head>
    <body>
         <div class="content">
@@ -73,7 +74,11 @@ if(isset($_POST['password-reset-token']) && $_POST['email'])
     $mail->Body    = 'Click On This Link to Reset Password '.$link.'';
     if($mail->Send())
     {
-      echo "Check Your Email and Click on the link sent to your email";
+      echo '<p>Check Your Email and Click on the link sent to your email.</p>
+      <br><br><br>
+      <div class="login-box">
+        <a href="login.php"><input type="submit" value="Goto Login Page" class="submit"></a>
+      </div>';
     }
     else
     {

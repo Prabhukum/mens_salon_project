@@ -50,6 +50,7 @@
       <link href="includes/css/login.css" rel="stylesheet">
       <script src="includes/js/jquery.min.js"></script>
       <script src="includes/js/jquery-ui.min.js"></script>
+      <link rel="icon" href="includes/images/favicon.ico" type="image/x-icon"/>
    </head>
    <body>
         <div class="content">
@@ -95,7 +96,7 @@
                 </form>
                 </div>
                 <hr>
-                <a href="forget-password.php" target="_blank">
+                <a href="forget-password.php">
                     <h4>Forgot password?</h4>
                 </a>
             </div>
