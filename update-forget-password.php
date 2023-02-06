@@ -1,21 +1,9 @@
-<!DOCTYPE html>
-<html>
-   <head>
-      <meta charset="utf-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <title>Sholinghur Saloon</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link href="includes/css/login.css" rel="stylesheet">
-      <script src="includes/js/jquery.min.js"></script>
-      <script src="includes/js/jquery-ui.min.js"></script>
-      <link rel="icon" href="includes/images/favicon.ico" type="image/x-icon"/>
-   </head>
-   <body>
-        <div class="content">
-        <div class="container">
-        <div class="connexion">
+<?php
+require 'login_ui.php';
+  echo $ui_top;
+?>
 
-        <?php
+<?php
             if(isset($_POST['password']) && $_POST['reset_link_token'] && $_POST['email'])
             {
             include("includes/config.php");
@@ -29,7 +17,7 @@
             echo '<p>Congratulations! Your password has been updated successfully.</p>
             <br><br><br>
             <div class="login-box">
-              <a href="login.php"><input type="submit" value="Goto Login Page" class="submit"></a>
+              <a href="index.php"><input type="submit" value="Goto Home Page" class="submit"></a>
             </div>';
             }else{
             echo '<p>Something goes wrong. Please try again</p>';
@@ -37,8 +25,6 @@
             }
         ?>
 
-        </div>
-        </div>
-        </div>
-   </body>
-</html>
+<?php
+  echo $ui_bottom;
+?>
