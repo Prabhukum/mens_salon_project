@@ -18,7 +18,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="icon" href="saloon/favicon.ico" type="image/x-icon"/>
     <!-- Bootstrap core CSS -->
-    <link href=".app/assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -204,7 +203,7 @@
 
       <div class="col-md-5">
         <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
-        <video class="img-fluid" autoplay loop muted><source src="app/videos/production ID_4631349.mp4" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" type="video/mp4" /></video>
+        <video class="img-fluid" autoplay loop muted><source src="app/videos/V4.mp4" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" type="video/mp4" /></video>
         </div>
     </div>
 
@@ -248,8 +247,6 @@
   </footer>
 </main>
 
-
-    <script src=".app/assets/dist/js/bootstrap.bundle.min.js"></script>
 
       
   </body>
