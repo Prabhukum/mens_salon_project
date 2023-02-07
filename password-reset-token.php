@@ -1,23 +1,9 @@
+<?php
+require 'login_ui.php';
+  echo $ui_top;
+?>
 
-
-<!DOCTYPE html>
-<html>
-   <head>
-      <meta charset="utf-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <title>Sholinghur Saloon</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link href="includes/css/login.css" rel="stylesheet">
-      <script src="includes/js/jquery.min.js"></script>
-      <script src="includes/js/jquery-ui.min.js"></script>
-      <link rel="icon" href="includes/images/favicon.ico" type="image/x-icon"/>
-   </head>
-   <body>
-        <div class="content">
-        <div class="container">
-        <div class="connexion">
-
-        <?php
+<?php
 	use PHPMailer\PHPMailer\PHPMailer;
 	//use mailer\src\Exception;
 	require 'mailer/src/PHPMailer.php';
@@ -46,9 +32,11 @@ if(isset($_POST['password-reset-token']) && $_POST['email'])
     $expDate = date("Y-m-d H:i:s",$expFormat);
  
     $update = mysqli_query($dbcon,"UPDATE users set  password='" . $password . "', reset_link_token='" . $token . "' ,exp_date='" . $expDate . "' WHERE email='" . $emailId . "'");
- 
-    $link = "<a href='http://localhost/SS/reset-password.php?key=".$emailId."&token=".$token."'>Click To Reset password</a>";
- 
+      if ($mode == "local") {
+        $link = "<a href='http://localhost/SS/reset-password.php?key=" . $emailId . "&token=" . $token . "'>Click To Reset password</a>";
+      } elseif ($mode == "production") {
+        $link = "<a href='https://sholinghur-saloon.my-style.in/reset-password.php?key=" . $emailId . "&token=" . $token . "'>Click To Reset password</a>";
+      }
     require_once('vendor/autoload.php');
  
     $mail = new PHPMailer();
@@ -71,13 +59,13 @@ if(isset($_POST['password-reset-token']) && $_POST['email'])
     $mail->AddAddress($emailId, 'reciever_name');
     $mail->Subject  =  'Reset Password';
     $mail->IsHTML(true);
-    $mail->Body    = 'Click On This Link to Reset Password '.$link.'';
+    $mail->Body    = 'Use this link to Reset your Password '.$link.'';
     if($mail->Send())
     {
       echo '<p>Check Your Email and Click on the link sent to your email.</p>
       <br><br><br>
       <div class="login-box">
-        <a href="login.php"><input type="submit" value="Goto Login Page" class="submit"></a>
+        <a href="index.php"><input type="submit" value="Goto Home Page" class="submit"></a>
       </div>';
     }
     else
@@ -90,7 +78,6 @@ if(isset($_POST['password-reset-token']) && $_POST['email'])
 }
 ?>
 
-        </div>
-        </div>
-   </body>
-</html>
+<?php
+  echo $ui_bottom;
+?>
