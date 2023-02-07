@@ -62,7 +62,7 @@
                     <h2>Login</h2>
                 </a>
                 <a href="#enregistrer" class="btn-enregistrer active">
-                    <h2>Register</h2>
+                    <h2>SignUp</h2>
                 </a>
             </div>
             <div class="connexion">
@@ -93,12 +93,13 @@
                     <?php echo $error; ?>
                     <?php echo $error_res; ?>
                     <br>
+                      <a href="forget-password.php">
+                        <h4>Forgot password?</h4>
+                      </a>
                 </form>
                 </div>
                 <hr>
-                <a href="forget-password.php">
-                    <h4>Forgot password?</h4>
-                </a>
+                
             </div>
             <div class="enregistrer active-section">
                 <div class="contact-form">
