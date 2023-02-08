@@ -17,6 +17,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="icon" href="saloon/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
 
     <style>
@@ -59,18 +60,18 @@
           <?php
           if(!$_SESSION['id']) {
             echo '          <li class="nav-item">
-            <a class="nav-link " href="login.php">Login</a>
+            <a class="nav-link mr-15"href="login.php">Login/signUp <i class="fa fa-fw fa-user"></i></a>
           </li>';
           } else {
             echo '          <li class="nav-item">
-            <a class="nav-link " href="logout.php">LogOut</a>
+            <a class="nav-link "href="logout.php">LogOut</a>
           </li>';
           }
           ?>
         </ul>
         <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <input class="form-control me-2" type="search" placeholder="location" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Location</button>
         </form>
       </div>
     </div>
@@ -89,21 +90,21 @@
         <video class="img-fluid" autoplay loop muted><source src="app\videos\V1 Adobeexpress.mp4" type="video/mp4" /></video>
         <div class="carousel-caption d-md-block">
           <h1>Salon at home experience</h1>
-          <p>"Welcome to the comfort of your own home, where luxury meets relaxation. Our salon at home experience is designed to make you feel pampered and rejuvenated, leaving you with a renewed sense of beauty and confidence.".</p>
-          <p><a class="btn btn-lg btn-primary" href="#">Subscribe today</a></p> 
+          <p class="mb-sm-2">"Welcome to the comfort of your own home..</p>
+          <p><a class="btn btn-lg btn-dark" href="#">Book Services &raquo;</a></p> 
         </div>
       </div>
       <div class="carousel-item">
         <video class="img-fluid" autoplay loop muted><source src="app\videos\Pexels-Dronca-Rafael-7085993.mp4" type="video/mp4" /></video>
         <div class="carousel-caption dd-md-block">
-          <h5>Second slide label</h5>
+          <h5></h5>
           <p>Some representative placeholder content for the second slide.</p>
         </div>
       </div>
       <div class="carousel-item">
         <video class="img-fluid" autoplay loop muted><source src="app/videos/V3.mp4" type="video/mp4" /></video>
         <div class="carousel-caption d-md-block">
-          <h5>Third slide label</h5>
+          <h5></h5>
           <p>Some representative placeholder content for the third slide.</p>
         </div>
       </div>
