@@ -53,7 +53,7 @@
       <link rel="icon" href="includes/images/favicon.ico" type="image/x-icon"/>
    </head>
    <body>
-        <div class="content">
+        <div class="content ">
 
         <div class="container">
 

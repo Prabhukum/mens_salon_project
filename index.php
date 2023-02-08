@@ -86,7 +86,7 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <video class="img-fluid" autoplay loop muted><source src="app/videos/V1.mp4" type="video/mp4" /></video>
+        <video class="img-fluid" autoplay loop muted><source src="app\videos\V1 Adobeexpress.mp4" type="video/mp4" /></video>
         <div class="carousel-caption d-none d-md-block">
           <h1>Salon at home experience</h1>
           <p>"Welcome to the comfort of your own home, where luxury meets relaxation. Our salon at home experience is designed to make you feel pampered and rejuvenated, leaving you with a renewed sense of beauty and confidence.".</p>
@@ -94,7 +94,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <video class="img-fluid" autoplay loop muted><source src="app/videos/V2.mp4" type="video/mp4" /></video>
+        <video class="img-fluid" autoplay loop muted><source src="app\videos\Pexels-Dronca-Rafael-7085993.mp4" type="video/mp4" /></video>
         <div class="carousel-caption d-none d-md-block">
           <h5>Second slide label</h5>
           <p>Some representative placeholder content for the second slide.</p>
@@ -164,7 +164,7 @@
         <a href="Tatoo Card-Section.html"><img src="app/saloon/pexels-fulvio-pessi-4655687.jpg" class="rounded-circle" width="140" height="140" alt=""></a>
         <h2>Tatoo's</h2>
         <p>Express your individuality with our range <br>of top-quality tattoo products,<br>our tattoo products are <br>the perfect choice for you.</p>
-        <p><a class="btn btn-dark" href="Tatoo Card-Section.html" >View details &raquo;<span class="loader"></span></a></p>
+        <p><a class="btn btn-dark" href="Tatoo Card-Section.html" >View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
 
 
@@ -198,12 +198,10 @@
         <h2 class="featurette-heading">Hair Straightening<span class="text-muted">It’ll blow your mind.</span></h2>
         <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
       </div>
-
-
-
-      <div class="col-md-5">
+      
+       <div class="col-md-5">
         <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
-        <video class="img-fluid" autoplay loop muted><source src="app/videos/V4.mp4" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" type="video/mp4" /></video>
+        <video class="img-fluid" autoplay loop muted><source src="app\videos\Production Id 3997179 Adobeexpress_preview.mp4" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" type="video/mp4" /></video>
         </div>
     </div>
 
@@ -216,7 +214,7 @@
       </div>
       <div class="col-md-5 order-md-1">
         <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="https://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>  -->
-
+        <video class="img-fluid" autoplay loop muted><source src="app\videos\pexels-tima-miroshnichenko-7607766_AdobeExpress.mp4" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" type="video/mp4" /></video>
       </div>
     </div>
 
@@ -224,12 +222,12 @@
 
     <div class="row featurette"> <!-- image container backgound -->
       <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+        <h2 class="featurette-heading">And lastly,Head massage<span class="text-muted">Checkmate.</span></h2>
         <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
       </div>
       <div class="col-md-5">
        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="https://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>  -->
-
+       <video class="img-fluid" autoplay loop muted><source src="app\videos\Pexels-Kelly-Lacy-9737984 Adobeexpress_preview.mp4" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" type="video/mp4" /></video>
       </div>
     </div>
 
