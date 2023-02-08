@@ -87,7 +87,7 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <video class="img-fluid" autoplay loop muted><source src="app\videos\V1 Adobeexpress.mp4" type="video/mp4" /></video>
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption d-md-block">
           <h1>Salon at home experience</h1>
           <p>"Welcome to the comfort of your own home, where luxury meets relaxation. Our salon at home experience is designed to make you feel pampered and rejuvenated, leaving you with a renewed sense of beauty and confidence.".</p>
           <p><a class="btn btn-lg btn-primary" href="#">Subscribe today</a></p> 
@@ -95,14 +95,14 @@
       </div>
       <div class="carousel-item">
         <video class="img-fluid" autoplay loop muted><source src="app\videos\Pexels-Dronca-Rafael-7085993.mp4" type="video/mp4" /></video>
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption dd-md-block">
           <h5>Second slide label</h5>
           <p>Some representative placeholder content for the second slide.</p>
         </div>
       </div>
       <div class="carousel-item">
         <video class="img-fluid" autoplay loop muted><source src="app/videos/V3.mp4" type="video/mp4" /></video>
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption d-md-block">
           <h5>Third slide label</h5>
           <p>Some representative placeholder content for the third slide.</p>
         </div>
@@ -133,27 +133,27 @@
         <div class="col-lg-4 mt-5 ">
         <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
        <a href="haircut for men & kid's Card-Section.html"><img src="app/saloon/pexels-kevin-bidwell-9491365.jpg" class="rounded-circle  mb-2" width="140" height="140" alt=""></a>  
-        <h2>Haircut for Men & Kid's</h2>
-        <p>Get the perfect look with our expert haircuts for men and kids. Trust us for a fresh, clean cut every time.</p>
-        <p><a class="btn btn-dark" href="haircut for men & kid's Card-Section.html">View details &raquo;</a></p>
+        <h2 class="mt-lg-3">Haircut for Men & Kid's</h2>
+        <p class="mt-lg-4 px-lg-5">Get the perfect look with our expert haircuts for men and kids. Trust us for a fresh, clean cut every time.</p>
+        <p><a class="btn btn-dark mt-lg-2" href="haircut for men & kid's Card-Section.html">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
 
        <!------------------------------------ Hair color -------------------->
       <div class="col-lg-4 mt-5">
         <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
         <a href="Hair color Card-Section.html"><img src="app/saloon/pexels-john-diez-7389074.jpg" class="rounded-circle  mb-2" width="140" height="140" alt=""></a>
-        <h2>Hair color</h2>
-        <p>Experience the convenience of at-home hair coloring with our selection of premium hair color products.</p>
-        <p><a class="btn btn-dark" href="Hair color Card-Section.html">View details &raquo;</a></p>
+        <h2 class="mt-lg-1">Hair color</h2>
+        <p class="mt-lg-4 px-lg-5">Experience the convenience of at-home hair coloring with our selection of premium hair color products.</p>
+        <p><a class="btn btn-dark mt-lg-3" href="Hair color Card-Section.html">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
 
       <!------------------------------------- shave/beard ---------------------------------------------- -->
       <div class="col-lg-4 mt-5">
         <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
         <a href="Shave_Beard_Card_Section.html"><img src="app/saloon/pexels-cottonbro-studio-3998419 (1).jpg" class="rounded-circle mb-2" width="140" height="140" alt=""></a>
-        <h2>Shave/beard</h2>
-        <p>Get a smooth and clean shave from the comfort of your own home with our selection of top-quality shaving products.</p>
-        <p><a class="btn btn-dark" href="Shave_Beard_Card_Section.html">View details &raquo;</a></p>
+        <h2 class="mt-lg-1">Shave/beard</h2>
+        <p class="mt-lg-4 px-lg-5">Get a smooth and clean shave from the comfort of your own home with our selection of top-quality shaving products.</p>
+        <p><a class="btn btn-dark mt-lg-3" href="Shave_Beard_Card_Section.html">View details &raquo;</a></p>
        </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
@@ -162,9 +162,9 @@
       <div class="col-lg-4  p-3 ">
         <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
         <a href="Tatoo Card-Section.html"><img src="app/saloon/pexels-fulvio-pessi-4655687.jpg" class="rounded-circle" width="140" height="140" alt=""></a>
-        <h2>Tatoo's</h2>
+        <h2 class="mt-lg-3">Tatoo's</h2>
         <p>Express your individuality with our range <br>of top-quality tattoo products,<br>our tattoo products are <br>the perfect choice for you.</p>
-        <p><a class="btn btn-dark" href="Tatoo Card-Section.html" >View details &raquo;</a></p>
+        <p><a class="btn btn-dark mt-lg-3" href="Tatoo Card-Section.html" >View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
 
 
@@ -172,18 +172,18 @@
       <div class="col-lg-4 p-3 ">
         <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
         <a href="Bridal_Makeup_Card_Section.html"><img src="app/saloon/pexels-cottonbro-studio-3998419 (1).jpg" class="rounded-circle" width="140" height="140" alt=""></a>
-        <h2>Bridal makeup</h2>
-        <p>Look stunning on your special day with our bridal makeup services.</p>
-        <p><a class="btn btn-dark" href="Bridal_Makeup_Card_Section.html">View details &raquo;</a></p>
+        <h2 class="mt-lg-3">Bridal makeup</h2>
+        <p class="mt-lg-4 px-lg-5">Look stunning on your special day with our bridal makeup services.tutud yhdfghxdgh rtysetys dstfhhtu</p>
+        <p><a class="btn btn-dark mt-lg-4" href="Bridal_Makeup_Card_Section.html">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
 
       <!------------------------------ ear &body piercing -------------------------------------------->
       <div class="col-lg-4  p-3">
         <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
-        <a  href="Ear & Body Piercing.html" ><img src="app/saloon/pexels-maiza-campos-11390512.jpg"class="rounded-circle" width="140" height="140" alt=""></a>
-        <h2>Ear & Body <br>piercing</h2>
-        <p>Add a touch of elegance to your look with our range of ear piercings.</p>
-        <p><a class="btn btn-dark" href="Ear & Body Piercing.html">View details &raquo;</a></p>
+        <a href="Ear & Body Piercing.html" ><img src="app/saloon/pexels-maiza-campos-11390512.jpg"class="rounded-circle" width="140" height="140" alt=""></a>
+        <h2 class="mt-lg-1">Ear & Body <br>piercing</h2>
+        <p class="mt-lg-4 px-lg-5">Add a touch of elegance to your look with our range of ear piercings.</p>
+        <p><a class="btn btn-dark mt-lg-3" href="Ear & Body Piercing.html">View details &raquo;</a></p>
        </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
@@ -195,10 +195,10 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">Hair Straightening<span class="text-muted">It’ll blow your mind.</span></h2>
+        <h2 class="featurette-heading"><a href="hair straightening page">Hair Straightening</a><span class="text-muted"><br>It’ll blow your mind.</span></h2>
         <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
       </div>
-      
+
        <div class="col-md-5">
         <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
         <video class="img-fluid" autoplay loop muted><source src="app\videos\Production Id 3997179 Adobeexpress_preview.mp4" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" type="video/mp4" /></video>
@@ -209,7 +209,7 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">facial <span class="text-muted">See for yourself.</span></h2>
+        <h2 class="featurette-heading"><a href="faical page">facial </a><span class="text-muted">See for yourself.</span></h2>
         <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
       </div>
       <div class="col-md-5 order-md-1">
@@ -222,7 +222,7 @@
 
     <div class="row featurette"> <!-- image container backgound -->
       <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly,Head massage<span class="text-muted">Checkmate.</span></h2>
+        <h2 class="featurette-heading">And lastly,<a href="head massage page">Head massage</a><span class="text-muted">Checkmate.</span></h2>
         <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
       </div>
       <div class="col-md-5">
