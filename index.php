@@ -187,7 +187,7 @@
       <div class="col-lg-4  p-3">
         <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
         <a href="Ear & Body Piercing.html" ><img src="app/saloon/pexels-maiza-campos-11390512.jpg"class="rounded" width="140" height="140" alt=""></a>
- <h2 class="mt-lg-1">Ear & Body <br>piercing</h2>
+        <h2 class="mt-lg-1">Ear & Body <br>piercing</h2>
         <p class="mt-lg-4 px-lg-5">Add a touch of elegance to your look with our range of ear piercings.</p>
         <p><a class="btn btn-dark mt-lg-3" href="app\Ear & Body Piercing.html">View details &raquo;</a></p>
        </div><!-- /.col-lg-4 -->
@@ -242,7 +242,6 @@
     <!-- /END THE FEATURETTES -->
 
   </div><!-- /.container -->
-  <div class="cta2-heading text-center"><h2 class="sub-header-font">Refreshed</h2></div>
 
   <!-- FOOTER -->
   <footer class="container d-sm-block">
