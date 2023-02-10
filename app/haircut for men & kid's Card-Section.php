@@ -1,8 +1,11 @@
+<?php
+	include("../includes/config.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>Bootstrap Example</title>
+  <title>HairCut for Men's & Kids</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -86,14 +89,23 @@ rel="stylesheet"
               <div class="carousel-inner ">
                 <div class="item carousel-item active">
                   <div class="row">
+
+
+                  <?php
+                    $statement = $pdo->prepare("SELECT * FROM tbl_product WHERE p_is_featured=? AND p_is_active=?");
+                    // $statement = $pdo->prepare("SELECT * FROM tbl_product");
+                    $statement->execute(array(1,1));
+                    $result = $statement->fetchAll(PDO::FETCH_ASSOC);                            
+                    foreach ($result as $row) {
+                  ?>
                     <div class="col-sm-3">
                       <div class="thumb-wrapper bg-dark">
                          
                         <div class="img-box">
-                          <img src="./saloon/head_massage.jpg" class="img-fluid" alt="head_massage">									
+                          <img src="./saloon/<?php echo $row['p_featured_photo']; ?>" class="img-fluid" alt="<?php echo $row['p_name']; ?>">									
                         </div>
                         <div class="thumb-content">
-                          <h>Head Massage</h>									
+                          <h><?php echo $row['p_name']; ?></h>									
                           <div class="star-rating">
                             <ul class="list-inline">
                               <li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -102,14 +114,17 @@ rel="stylesheet"
                               
                             </ul>
                           </div>
-                          <p class="item-price"><strike>₹400.00</strike> <b>₹69.00</b></p>
+                          <p class="item-price"><strike>₹<?php echo $row['p_old_price']; ?></strike> <b><?php echo $row['p_current_price']; ?> </b></p>
                           
                           <a href="#" class="btn btn-primary">Add to Cart</a>
                         </div>						
                       </div>
                     </div>
 
-                    </div>						
+                    <?php
+                    }
+                  ?>		
+                    </div>				
                   </div>
                 </div>
               </div>
@@ -124,13 +139,21 @@ rel="stylesheet"
                <!-- For small devices -->
               <div class="container d-lg-none d-md-block d-sm-block">
                <div class="owl-carousel owl-theme">
+
+               <?php
+                    $statement = $pdo->prepare("SELECT * FROM tbl_product WHERE p_is_featured=? AND p_is_active=?");
+                    // $statement = $pdo->prepare("SELECT * FROM tbl_product");
+                    $statement->execute(array(1,1));
+                    $result = $statement->fetchAll(PDO::FETCH_ASSOC);                            
+                    foreach ($result as $row) {
+                  ?>
                 <div class="item"><div class="thumb-wrapper bg-dark">
                          
                   <div class="img-box">
-                    <img src="./saloon/head_massage.jpg" class="img-fluid" alt="head_massage">									
+                    <img src="./saloon/<?php echo $row['p_featured_photo']; ?>" class="img-fluid" alt="<?php echo $row['p_name']; ?>">									
                   </div>
                   <div class="thumb-content">
-                    <h>Head Massage</h>									
+                    <h><?php echo $row['p_name']; ?></h>									
                     <div class="star-rating">
                       <ul class="list-inline">
                         <li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -139,84 +162,15 @@ rel="stylesheet"
                        
                       </ul>
                     </div>
-                    <p class="item-price"><strike>₹400.00</strike> <b>₹69.00</b></p>
+                    <p class="item-price"><strike>₹<?php echo $row['p_old_price']; ?></strike> <b><?php echo $row['p_current_price']; ?> </b></p>
          
                     <a href="#" class="btn btn-primary btn-small">Add to Cart</a>
                   </div>						
                 </div></div>
-                <div class="item">
-                  <div class="thumb-wrapper bg-dark">
-                         
-                    <div class="img-box">
-                      <img src="./saloon/face_detan.jpg" class="img-fluid" alt="face_detan">
-                    </div>
-                    <div class="thumb-content">
-                      <h4>Face detan</h4>									
-                      <div class="star-rating">
-                        <ul class="list-inline">
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                        
-                        </ul>
-                      </div>
-                      <p class="item-price"><strike>₹25.00</strike> <b>₹23.99</b></p>
-                     
-                      <a href="#" class="btn btn-primary btn-small">Add to Cart</a>
-                    </div>						
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="thumb-wrapper bg-dark">
-                        
-                    <div class="img-box">
-                      <img src="./saloon/bread_trimming.jpg" class="img-fluid" alt="Bread_trimmming">
-                    </div>
-                    <div class="thumb-content">
-                      <h6>Beard Trimming</h6>									
-                      <div class="star-rating">
-                        <ul class="list-inline">
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                        
-                        </ul>
-                      </div>
-                      <p class="item-price"><strike>₹899.00</strike> <b>₹649.00</b></p>
-                      <a href="#" class="btn btn-primary mt-3 btn-small">Add to Cart</a>
-                    </div>						
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="thumb-wrapper bg-dark">
-                       
-                    <div class="img-box">
-                      <img src="./saloon/beard_shave.jpg" class="img-fluid" alt="Bread_shave">
-                    </div>
-                    <div class="thumb-content">
-                      <h4>Beard Shave</h4>									
-                      <div class="star-rating">
-                        <ul class="list-inline">
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          
-                        </ul>
-                      </div>
-                      <p class="item-price"><strike>₹315.00</strike> <b>₹250.00</b></p>
-            
-                      <a href="#" class="btn btn-primary btn-small">Add to Cart</a>
-                    </div>						
-                  </div>
-                </div>
-                <div class="item"><h4>5</h4></div>
-                <div class="item"><h4>6</h4></div>
-                <div class="item"><h4>7</h4></div>
-                <div class="item"><h4>8</h4></div>
-                <div class="item"><h4>9</h4></div>
-                <div class="item"><h4>10</h4></div>
-                <div class="item"><h4>11</h4></div>
-                <div class="item"><h4>12</h4></div>
+
+                <?php
+                    }
+                ?>	
               </div>
             </div>
             </div>
@@ -227,6 +181,14 @@ rel="stylesheet"
         <section>
           <h1 class="d-flex justify-content-center">Hair Care</h1>
           <div class="container py-5 d-none d-lg-block">
+
+          <?php
+                $statement = $pdo->prepare("SELECT * FROM tbl_product where ecat_id =?");
+                $statement->execute(array(105));
+                $result = $statement->fetchAll(PDO::FETCH_ASSOC);                            
+                foreach ($result as $row) {
+            ?>
+
             <div class="row justify-content-center mb-3">
               <div class="col-md-12 col-xl-10">
                 <div class="card shadow-5-strong border-0 bg-dark rounded">
@@ -234,7 +196,7 @@ rel="stylesheet"
                     <div class="row">
                       <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
                         <div class="bg-image hover-zoom ripple rounded ripple-surface">
-                          <img src="./saloon/Hair_cut.jpg"
+                          <img src="./saloon/<?php echo $row['p_featured_photo']; ?>"
                             class="w-100"/>
                           <a href="#!">
                             <div class="hover-overlay">
@@ -244,28 +206,26 @@ rel="stylesheet"
                         </div>
                       </div>
                       <div class="col-md-6 col-lg-6 col-xl-6">
-                        <h5>Hair Cut</h5>
+                        <h5><?php echo $row['p_name']; ?></h5>
                         
                         <div class="d-flex flex-row">
                        
-                            <span class="mt-1">• 30 mins</span>
+                            <span class="mt-1">• <?php echo $row['p_service_time']; ?></span>
                         </div>
                         <div class="mt-3 mb-0 text-muted small">
-                          <span>100% company hair products</span>
+                          <span><?php echo $row['p_description']; ?></span>
                           <span class="text-primary"> • </span>
-                          <span>Ammonia free products</span>
+                          <span><?php echo $row['p_short_description']; ?></span>
                           <span class="text-primary"> • </span>
-                          <span>Best finish<br /></span>
+                          <span><?php echo $row['p_feature']; ?><br /></span>
                         </div>
                        
-                        <p class="mt-4 mb-4 mb-md-0">
-                          Let your hair do the talking.
-                        </p>
+                        <p class="mt-4 mb-4 mb-md-0">Let your hair do the talking.</p>
                       </div>
                       <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
                         <div class="d-flex flex-row align-items-center mb-1">
-                          <h4 class="mb-1 me-1">₹150</h4>
-                          <span class="text-danger"><s>₹200</s></span>
+                          <h4 class="mb-1 me-1">₹<?php echo $row['p_current_price']; ?></h4>
+                          <span class="text-danger"><s>₹<?php echo $row['p_old_price']; ?></s></span>
                         </div>
                         <h6 class="text-success">Free home services</h6>
                         <div class="d-flex flex-column mt-4">
@@ -283,130 +243,32 @@ rel="stylesheet"
                 </div>
               </div>
             </div>
-            <div class="row justify-content-center mb-3">
-              <div class="col-md-12 col-xl-10">
-                <div class="card shadow bg-dark rounded">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
-                        <div class="bg-image hover-zoom ripple rounded ripple-surface">
-                          <img src="./saloon/Hair_colour.jpg"
-                            class="w-100" />
-                          <a href="#!">
-                            <div class="hover-overlay">
-                              <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-md-6 col-lg-6 col-xl-6">
-                        <h5>Hair Color</h5>
-                        
-                        <div class="d-flex flex-row">
-                         
-                            <span class="mt-1">• 30 mins</span>
-                        </div>
-                        <div class="mt-3 mb-0 text-muted small">
-                          <span>100% company hair products</span>
-                          <span class="text-primary"> • </span>
-                          <span>Ammonia free products</span>
-                          <span class="text-primary"> • </span>
-                          <span>Best finish<br /></span>
-                        </div>
-                        
-                        <p class="mt-4 mb-4 mb-md-0">
-                          Let your hair do the talking.
-                        </p>
-                      </div>
-                      <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
-                        <div class="d-flex flex-row align-items-center mb-1">
-                          <h4 class="mb-1 me-1">₹150</h4>
-                          <span class="text-danger"><s>₹200</s></span>
-                        </div>
-                        <h6 class="text-success">Free home services</h6>
-                        <div class="d-flex flex-column mt-4">
-                          <!-- <button class="btn btn-primary btn-sm" type="button">Details</button> -->
-                          <button class="btn-small-ser mt-2" type="button">
-                            Book now
-                          </button>
-                          <button class="btn-small-ser mt-2" type="button">
-                            Add to wishlist
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-            <div class="row justify-content-center">
-              <div class="col-md-12 col-xl-10">
-                <div class="card shadow bg-dark  rounded">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
-                        <div class="bg-image hover-zoom ripple rounded ripple-surface">
-                          <img src="./saloon/test.jpg"
-                            class="w-100" />
-                          <a href="#!">
-                            <div class="hover-overlay">
-                              <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-md-6 col-lg-6 col-xl-6">
-                        <h5>Hair Straightening</h5>
-                       
-                        <div class="d-flex flex-row">
-                         
-                            <span class="mt-1">• 30 mins</span>
-                        </div>
-                        <div class="mt-3 mb-0 text-muted small">
-                          <span>100% company hair products</span>
-                          <span class="text-primary"> • </span>
-                          <span>Ammonia free products</span>
-                          <span class="text-primary"> • </span>
-                          <span>Best finish<br /></span>
-                        </div>
-                       
-                        <p class="mt-4 mb-4 mb-md-0">
-                          Let your hair do the talking.
-                        </p>
-                      </div>
-                      <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
-                        <div class="d-flex flex-row align-items-center mb-1">
-                          <h4 class="mb-1 me-1">₹150</h4>
-                          <span class="text-danger"><s>₹200</s></span>
-                        </div>
-                        <h6 class="text-success">Free home services</h6>
-                        <div class="d-flex flex-column mt-4">
-                          <!-- <button class="btn btn-primary btn-sm" type="button">Details</button> -->
-                          <button class="btn-small-ser  btn-sm mt-2" type="button">
-                            Book now
-                          </button>
-                          <button class="btn-small-ser btn-sm mt-2" type="button">
-                            Add to wishlist
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
+
+            <?php
+                }
+            ?>	
+
 
           <!-- Small devices -->
           <div class="container py-5 d-lg-none d-md-block d-sm-block">
-            <div class="row justify-content-center mb-3">
-              <div class="col-md-12 col-xl-10">
-                <div class="card shadow-5-strong border-0 bg-dark rounded">
+
+          <?php
+                $statement = $pdo->prepare("SELECT * FROM tbl_product where ecat_id =?");
+                $statement->execute(array(105));
+                $result = $statement->fetchAll(PDO::FETCH_ASSOC);                            
+                foreach ($result as $row) {
+            ?>
+
+          <div class="row justify-content-center mb-3">
+          <div class="col-md-12 col-xl-10">
+          <div class="card shadow-5-strong border-0 bg-dark rounded">
                   <div class="card-body">
                     <div class="row">
                       <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
                         <div class="bg-image hover-zoom ripple rounded ripple-surface">
-                          <img src="./saloon/Hair_cut.jpg"
+                          <img src="./saloon/<?php echo $row['p_featured_photo']; ?>"
                             class="w-100"/>
                           <a href="#!">
                             <div class="hover-overlay">
@@ -416,28 +278,26 @@ rel="stylesheet"
                         </div>
                       </div>
                       <div class="col-md-6 col-lg-6 col-xl-6">
-                        <h5>Hair Cut</h5>
+                        <h5><?php echo $row['p_name']; ?></h5>
                         
                         <div class="d-flex flex-row">
                        
-                            <span class="mt-1">• 30 mins</span>
+                            <span class="mt-1">• <?php echo $row['p_service_time']; ?></span>
                         </div>
                         <div class="mt-3 mb-0 text-muted small">
-                          <span>100% company hair products</span>
+                          <span><?php echo $row['p_description']; ?></span>
                           <span class="text-primary"> • </span>
-                          <span>Ammonia free products</span>
+                          <span><?php echo $row['p_short_description']; ?></span>
                           <span class="text-primary"> • </span>
-                          <span>Best finish<br /></span>
+                          <span><?php echo $row['p_feature']; ?><br /></span>
                         </div>
                        
-                        <p class="mt-4 mb-4 mb-md-0">
-                          Let your hair do the talking.
-                        </p>
+                        <p class="mt-4 mb-4 mb-md-0">Let your hair do the talking.</p>
                       </div>
                       <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
                         <div class="d-flex flex-row align-items-center mb-1">
-                          <h4 class="mb-1 me-1">₹150</h4>
-                          <span class="text-danger"><s>₹200</s></span>
+                          <h4 class="mb-1 me-1">₹<?php echo $row['p_current_price']; ?></h4>
+                          <span class="text-danger"><s>₹<?php echo $row['p_old_price']; ?></s></span>
                         </div>
                         <h6 class="text-success">Free home services</h6>
                         <div class="d-flex flex-column mt-4">
@@ -455,149 +315,19 @@ rel="stylesheet"
                 </div>
               </div>
             </div>
-            <div class="row justify-content-center mb-3">
-              <div class="col-md-12 col-xl-10">
-                <div class="card shadow bg-dark rounded">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
-                        <div class="bg-image hover-zoom ripple rounded ripple-surface">
-                          <img src="./saloon/Hair_colour.jpg"
-                            class="w-100" />
-                          <a href="#!">
-                            <div class="hover-overlay">
-                              <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-md-6 col-lg-6 col-xl-6">
-                        <h5>Hair Color</h5>
-                        
-                        <div class="d-flex flex-row">
-                         
-                            <span class="mt-1">• 30 mins</span>
-                        </div>
-                        <div class="mt-3 mb-0 text-muted small">
-                          <span>100% company hair products</span>
-                          <span class="text-primary"> • </span>
-                          <span>Ammonia free products</span>
-                          <span class="text-primary"> • </span>
-                          <span>Best finish<br /></span>
-                        </div>
-                        
-                        <p class="mt-4 mb-4 mb-md-0">
-                          Let your hair do the talking.
-                        </p>
-                      </div>
-                      <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
-                        <div class="d-flex flex-row align-items-center mb-1">
-                          <h4 class="mb-1 me-1">₹150</h4>
-                          <span class="text-danger"><s>₹200</s></span>
-                        </div>
-                        <h6 class="text-success">Free home services</h6>
-                        <div class="d-flex flex-column mt-4">
-                          <!-- <button class="btn btn-primary btn-sm" type="button">Details</button> -->
-                          <button class="btn-small-ser mt-2" type="button">
-                            Book now
-                          </button>
-                          <button class="btn-small-ser mt-2" type="button">
-                            Add to wishlist
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-md-12 col-xl-10">
-                <div class="card shadow bg-dark  rounded">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
-                        <div class="bg-image hover-zoom ripple rounded ripple-surface">
-                          <img src="./saloon/test.jpg"
-                            class="w-100" />
-                          <a href="#!">
-                            <div class="hover-overlay">
-                              <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-md-6 col-lg-6 col-xl-6">
-                        <h5>Hair Straightening</h5>
-                       
-                        <div class="d-flex flex-row">
-                         
-                            <span class="mt-1">• 30 mins</span>
-                        </div>
-                        <div class="mt-3 mb-0 text-muted small">
-                          <span>100% company hair products</span>
-                          <span class="text-primary"> • </span>
-                          <span>Ammonia free products</span>
-                          <span class="text-primary"> • </span>
-                          <span>Best finish<br /></span>
-                        </div>
-                       
-                        <p class="mt-4 mb-4 mb-md-0">
-                          Let your hair do the talking.
-                        </p>
-                      </div>
-                      <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
-                        <div class="d-flex flex-row align-items-center mb-1">
-                          <h4 class="mb-1 me-1">₹150</h4>
-                          <span class="text-danger"><s>₹200</s></span>
-                        </div>
-                        <h6 class="text-success">Free home services</h6>
-                        <div class="d-flex flex-column mt-4">
-                          <!-- <button class="btn btn-primary btn-sm" type="button">Details</button> -->
-                          <button class="btn-small-ser  btn-sm mt-2" type="button">
-                            Book now
-                          </button>
-                          <button class="btn-small-ser btn-sm mt-2" type="button">
-                            Add to wishlist
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+            <?php
+                    }
+            ?>	
+
+
           </div>
         </section>
       </div>
     </div>
    <!-- Remove the container if you want to extend the Footer to full width. -->
 <div class="container my-5">
-
-  <footer class="text-center text-lg-start bg-dark">
-    <div class="container d-flex justify-content-center py-5">
-      <button type="button" class="btn btn-primary btn-sm  mx-2" style="background-color: #54456b;">
-        <i class="fab fa-facebook-f"></i>
-      </button>
-      <button type="button" class="btn btn-primary btn-sm  mx-2" style="background-color: #54456b;">
-        <i class="fab fa-youtube"></i>
-      </button>
-      <button type="button" class="btn btn-primary btn-sm  mx-2" style="background-color: #54456b;">
-        <i class="fab fa-instagram"></i>
-      </button>
-      <button type="button" class="btn btn-primary btn-sm  mx-2" style="background-color: #54456b;">
-        <i class="fab fa-twitter"></i>
-      </button>
-    </div>
-
-    <!-- Copyright -->
-    <div class="text-center text-white p-2" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2022 Copyright:
-      <a class="text-white" href="/">mensalon</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
-  
+<?php require_once("footer.php"); ?>  
 </div>
 <!-- End of .container -->
     
