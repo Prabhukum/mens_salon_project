@@ -39,10 +39,10 @@
         $dbhost = 'sql304.epizy.com';
 
         // Database Name
-        $dbname = 'epiz_32968153';
+        $dbname = 'epiz_32968153_saloon';
 
         // Database Username
-        $dbuser = 'root';
+        $dbuser = 'epiz_32968153';
 
         // Database Password
         $dbpass = '9cLcFv93ECj8qM';
