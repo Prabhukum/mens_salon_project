@@ -74,17 +74,27 @@
           }
           ?>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="location" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Location</button>
-        </form>
+       
+        <div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    Select Location
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <li><a class="dropdown-item" href="#">Tiruttani</a></li>
+    <li><a class="dropdown-item" href="#">Sholingur</a></li>
+    <li><a class="dropdown-item" href="#">Arakkonam</a></li>
+    <li><a class="dropdown-item" href="#">Arcot</a></li>
+  </ul>
+</div>
+    
       </div>
     </div>
   </nav>
 </header>
 
 <main>
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -130,6 +140,7 @@
   <!-- Wrap the rest of the page in another container to center all the content. -->
 
   <div class="container-fluid marketing" id="scrolldown">
+   
 
     <!-- Three columns of text below the carousel -->
     <div class="row services">
@@ -138,7 +149,7 @@
       
         <div class="col-lg-4 mt-5 ">
         <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
-       <a href="app\Hair color Card-Section.html"><img src="app/saloon/pexels-kevin-bidwell-9491365.jpg" class="rounded-circle  mb-2" width="140" height="140" alt=""></a>  
+       <a href="app\Hair color Card-Section.html"><img src="app/saloon/pexels-kevin-bidwell-9491365.jpg" class="rounded mb-2" width="140" height="140" alt=""></a>  
         <h2 class="mt-lg-3">Haircut for Men & Kid's</h2>
         <p class="mt-lg-4 px-lg-5">Get the perfect look with our expert haircuts for men and kids. Trust us for a fresh, clean cut every time.</p>
         <p><a class="btn btn-dark mt-lg-2" href="app\haircut for men & kid's Card-Section.html">View details &raquo;</a></p>
@@ -234,13 +245,13 @@
       <div class="col-md-5">
        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="https://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>  -->
        <video class="img-fluid" autoplay loop muted><source src="app\videos\Pexels-Kelly-Lacy-9737984 Adobeexpress_preview.mp4" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" type="video/mp4" /></video>
-      </div>
+      </div> 
     </div>
-
+   
     <hr class="featurette-divider">
 
     <!-- /END THE FEATURETTES -->
-
+ 
   </div><!-- /.container -->
 
   <!-- FOOTER -->
@@ -250,7 +261,8 @@
   </footer>
 </main>
 
-
+<iframe src="https://www.google.com/maps/place/13.181053+79.601208" ></iframe>
       
   </body>
+ 
 </html>
