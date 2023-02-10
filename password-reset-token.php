@@ -33,7 +33,7 @@ if(isset($_POST['password-reset-token']) && $_POST['email'])
  
     $update = mysqli_query($dbcon,"UPDATE users set  password='" . $password . "', reset_link_token='" . $token . "' ,exp_date='" . $expDate . "' WHERE email='" . $emailId . "'");
       if ($mode == "local") {
-        $link = "<a href='http://localhost/SS/reset-password.php?key=" . $emailId . "&token=" . $token . "'>Click To Reset password</a>";
+        $link = "<a href='http://menslook.in/reset-password.php?key=" . $emailId . "&token=" . $token . "'>Click To Reset password</a>";
       } elseif ($mode == "production") {
         $link = "<a href='https://sholinghur-saloon.my-style.in/reset-password.php?key=" . $emailId . "&token=" . $token . "'>Click To Reset password</a>";
       }
