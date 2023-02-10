@@ -10,10 +10,12 @@ require 'login_ui.php';
             $emailId = $_POST['email'];
             $token = $_POST['reset_link_token'];
             $password = md5(sha1($_POST['password']));
-            $query = mysqli_query($dbcon,"SELECT * FROM `users` WHERE `reset_link_token`='".$token."' and `email`='".$emailId."'");
-            $row = mysqli_num_rows($query);
-            if($row){
-            mysqli_query($dbcon,"UPDATE users set  password='" . $password . "', reset_link_token='" . NULL . "' ,exp_date='" . NULL . "' WHERE email='" . $emailId . "'");
+            $statement = $pdo->prepare("SELECT * FROM `users` WHERE `reset_link_token`='".$token."' and `email`='".$emailId."'");
+            $statement->execute();
+
+            if ($statement->rowCount() > 0) {
+            $statement = $pdo->prepare("UPDATE users set  password='" . $password . "', reset_link_token='" . NULL . "' ,exp_date='" . NULL . "' WHERE email='" . $emailId . "'");
+            $statement->execute();
             echo '<p>Congratulations! Your password has been updated successfully.</p>
             <br><br><br>
             <div class="login-box">

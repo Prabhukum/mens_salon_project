@@ -14,13 +14,16 @@ require 'login_ui.php';
         include("includes/config.php");
         $email = $_GET['key'];
         $token = $_GET['token'];
-        $query = mysqli_query($dbcon,
-        "SELECT * FROM `users` WHERE `reset_link_token`='".$token."' and `email`='".$email."';"
-        );
+        // $query = mysqli_query($dbcon,"SELECT * FROM `users` WHERE `reset_link_token`='".$token."' and `email`='".$email."';");
+        $statement = $pdo->prepare("SELECT * FROM `users` WHERE `reset_link_token`='".$token."' and `email`='".$email."'");
+        $statement->execute();
         $curDate = date("Y-m-d H:i:s");
-        if (mysqli_num_rows($query) > 0) {
-        $row= mysqli_fetch_array($query);
-        if($row['exp_date'] >= $curDate){ ?>
+        if ($statement->rowCount() > 0) {
+                $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+                foreach($result as $row) {
+                        $expTime = $row['exp_date'];
+                }
+        if($expTime >= $curDate){ ?>
                 <form action="update-forget-password.php" method="post">
                         <input type="hidden" name="email" value="<?php echo $email;?>">
                         <input type="hidden" name="reset_link_token" value="<?php echo $token;?>">

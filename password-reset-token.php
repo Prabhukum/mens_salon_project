@@ -16,12 +16,10 @@ if(isset($_POST['password-reset-token']) && $_POST['email'])
      
     $emailId = $_POST['email'];
  
-    $result = mysqli_query($dbcon,"SELECT * FROM users WHERE email='" . $emailId . "'");
- 
-    $row= mysqli_fetch_array($result);
- 
-  if($row)
-  {
+    $statement = $pdo->prepare("SELECT * FROM users WHERE email='" . $emailId . "'");
+		$statement->execute();
+		if ($statement->rowCount() > 0)
+		{
      
      $token = md5($emailId).rand(10,9999);
  
@@ -31,7 +29,9 @@ if(isset($_POST['password-reset-token']) && $_POST['email'])
  
     $expDate = date("Y-m-d H:i:s",$expFormat);
  
-    $update = mysqli_query($dbcon,"UPDATE users set  password='" . $password . "', reset_link_token='" . $token . "' ,exp_date='" . $expDate . "' WHERE email='" . $emailId . "'");
+    $statement = $pdo->prepare("UPDATE users set  password='" . $password . "', reset_link_token='" . $token . "' ,exp_date='" . $expDate . "' WHERE email='" . $emailId . "'");
+		$statement->execute();
+
       if ($mode == "local") {
         $link = "<a href='http://menslook.in/reset-password.php?key=" . $emailId . "&token=" . $token . "'>Click To Reset password</a>";
       } elseif ($mode == "production") {

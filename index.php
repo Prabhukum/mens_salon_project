@@ -152,7 +152,7 @@
        <a href="app\Hair color Card-Section.html"><img src="app/saloon/pexels-kevin-bidwell-9491365.jpg" class="rounded mb-2" width="140" height="140" alt=""></a>  
         <h2 class="mt-lg-3">Haircut for Men & Kid's</h2>
         <p class="mt-lg-4 px-lg-5">Get the perfect look with our expert haircuts for men and kids. Trust us for a fresh, clean cut every time.</p>
-        <p><a class="btn btn-dark mt-lg-2" href="app\haircut for men & kid's Card-Section.html">View details &raquo;</a></p>
+        <p><a class="btn btn-dark mt-lg-2" href="app\haircut for men & kid's Card-Section.php">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
 
        <!------------------------------------ Hair color -------------------->
@@ -260,8 +260,6 @@
     <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a> &middot;  <a href="#">Contact Us</a></p>
   </footer>
 </main>
-
-<iframe src="https://www.google.com/maps/place/13.181053+79.601208" ></iframe>
       
   </body>
  

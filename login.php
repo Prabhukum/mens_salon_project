@@ -10,14 +10,18 @@
 		$username = $_POST["username-ver"];
 		$password = md5(sha1($_POST["password-ver"]));
 		
-		$userData = login($username, $password);
-
-		if (mysqli_num_rows($userData) > 0)
+		// $userData = login($username, $password);
+        $statement = $pdo->prepare("Select * from users Where username = '".$username."' && password = '".$password."'");
+		$statement->execute();
+		if ($statement->rowCount() > 0)
 		{
-			$user = mysqli_fetch_assoc($userData);
-			$_SESSION['id'] = $user['id'];
-			$_SESSION['username'] = $user['username'];
-			header("Location:index.php");
+			$result = $statement->fetchAll(PDO::FETCH_ASSOC);
+            foreach($result as $user) {
+                echo $user['id'];
+                $_SESSION['id'] = $user['id'];
+                $_SESSION['username'] = $user['username'];
+                header("Location:index.php");
+            }
 		}
 		else
 			$error = "*** Please enter Proper credentials.";
@@ -28,8 +32,12 @@
         $email = $_POST["email-res"];
         $phone = $_POST["phone-res"];
 
-        $error_res = register($username, $password, $email, $phone);
-        if($error_res == true) {
+        $statement = $pdo->prepare("INSERT INTO users (`username`, `password`, `email`, `phone`) VALUES ('$username', '$password', '$email', '$phone')");
+		$statement->execute();
+        $statement = $pdo->prepare("Select * from users Where username = '".$username."' && password = '".$password."'");
+		$statement->execute();
+		if ($statement->rowCount() > 0)
+		{
             $error = $error_res = "";
         } else {
             $error = "*** Please enter Proper credentials.";
