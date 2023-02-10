@@ -110,7 +110,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <video class="img-fluid" autoplay loop muted><source src="app\videos\Pexels-Dronca-Rafael-7085993.mp4" type="video/mp4" /></video>
+        <video class="img-fluid" autoplay loop muted><source src="app\videos\pexels-dronca-rafael-7085993.mp4" type="video/mp4" /></video>
         <div class="carousel-caption dd-md-block">
           <h5></h5>
           <p>Some representative placeholder content for the second slide.</p>
