@@ -139,72 +139,41 @@
   ================================================== -->
   <!-- Wrap the rest of the page in another container to center all the content. -->
 
-  <div class="container-fluid marketing" id="scrolldown">
+ 
    
 
     <!-- Three columns of text below the carousel -->
-    <div class="row services">
 
-              <!---------------------haircut for men &kids ------------------------------------->
-      
+
+<!---------------------haircut for men &kids ------------------------------------->
+      <?php
+        $statement = $pdo->prepare("SELECT * FROM tbl_services where s_is_active=?");
+        // $statement = $pdo->prepare("SELECT * FROM tbl_product");
+        $statement->execute(array(1));
+        $result = $statement->fetchAll(PDO::FETCH_ASSOC);  
+        $i = 0;                         
+        foreach ($result as $row) {
+          if($i == 0 || $i == 3){
+            echo ' <div class="container-fluid marketing" id="scrolldown"><div class="row services">';
+          }
+      ?>      
         <div class="col-lg-4 mt-5 ">
-        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
-       <a href="app\Hair color Card-Section.html"><img src="app/saloon/pexels-kevin-bidwell-9491365.jpg" class="rounded mb-2" width="140" height="140" alt=""></a>  
-        <h2 class="mt-lg-3">Haircut for Men & Kid's</h2>
-        <p class="mt-lg-4 px-lg-5">Get the perfect look with our expert haircuts for men and kids. Trust us for a fresh, clean cut every time.</p>
-        <p><a class="btn btn-dark mt-lg-2" href="app\haircut for men & kid's Card-Section.php">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
+          <a href="app\<?php echo $row['s_link']; ?>"><img src="app/saloon/<?php echo $row['s_image']; ?>" class="rounded mb-2" width="140" height="140" alt=""></a>  
+          <h2 class="mt-lg-3"><?php echo $row['s_name']; ?></h2>
+          <p class="mt-lg-4 px-lg-5"><?php echo $row['s_desc']; ?></p>
+          <p><a class="btn btn-dark mt-lg-2" href="app\<?php echo $row['s_link']; ?>">View details &raquo;</a></p>
+        </div>
 
-       <!------------------------------------ Hair color -------------------->
-      <div class="col-lg-4 mt-5">
-        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
-        <a href="app\Hair color Card-Section.html"><img src="app/saloon/pexels-john-diez-7389074.jpg" class="mb-2  hover-zoom ripple rounded ripple-surface" width="140" height="140" alt=""></a>
-        <h2 class="mt-lg-1">Hair color</h2>
-        <p class="mt-lg-4 px-lg-5">Experience the convenience of at-home hair coloring with our selection of premium hair color products.</p>
-        <p><a class="btn btn-dark mt-lg-3" href="app\Hair color Card-Section.html">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-
-      <!------------------------------------- shave/beard ---------------------------------------------- -->
-      <div class="col-lg-4 mt-5">
-        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
-        <a href="Shave_Beard_Card_Section.html"><img src="app/saloon/pexels-cottonbro-studio-3998419 (1).jpg" class="rounded mb-2" width="140" height="140" alt=""></a>
-        <h2 class="mt-lg-1">Shave/beard</h2>
-        <p class="mt-lg-4 px-lg-5">Get a smooth and clean shave from the comfort of your own home with our selection of top-quality shaving products.</p>
-        <p><a class="btn btn-dark mt-lg-3" href="app\Shave_Beard_Card_Section.html">View details &raquo;</a></p>
-       </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-
-    <div class="row">
-      <!------------------------------------- tatoo ------------------------------------------>
-      <div class="col-lg-4  p-3 ">
-        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
-        <a href="Tatoo Card-Section.html"><img src="app/saloon/pexels-fulvio-pessi-4655687.jpg" class="rounded" width="140" height="140" alt=""></a>
-        <h2 class="mt-lg-3">Tatoo's</h2>
-        <p>Express your individuality with our range <br>of top-quality tattoo products,<br>our tattoo products are <br>the perfect choice for you.</p>
-        <p><a class="btn btn-dark mt-lg-3" href="app\Tatoo Card-Section.html" >View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-
-
-     <!---------------------------------- bridal makeup -------------------------------------->
-      <div class="col-lg-4 p-3">
-        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
-        <a href="Bridal_Makeup_Card_Section.html"><img src="app/saloon/pexels-cottonbro-studio-3998419 (1).jpg" class="rounded" width="140" height="140" alt=""></a>
-        <h2 class="mt-lg-3">Bridal makeup</h2>
-        <p class="mt-lg-4 px-lg-5">Look stunning on your special day with our bridal makeup services.tutud yhdfghxdgh rtysetys dstfhhtu</p>
-        <p><a class="btn btn-dark mt-lg-4" href="app\Bridal_Makeup_Card_Section.html">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-
-      <!------------------------------ ear &body piercing -------------------------------------------->
-      <div class="col-lg-4  p-3">
-        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
-        <a href="Ear & Body Piercing.html" ><img src="app/saloon/pexels-maiza-campos-11390512.jpg"class="rounded" width="140" height="140" alt=""></a>
-        <h2 class="mt-lg-1">Ear & Body <br>piercing</h2>
-        <p class="mt-lg-4 px-lg-5">Add a touch of elegance to your look with our range of ear piercings.</p>
-        <p><a class="btn btn-dark mt-lg-3" href="app\Ear & Body Piercing.html">View details &raquo;</a></p>
-       </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
+     <?php
+          if($i == 2 || $i == 5){
+            echo '</div></div>';
+          }
+          $i++;
+        }
+      ?>	
 
 <!----------------------------------------------------------------------------------------------------------->
+
 
     <!----------------- START THE FEATURETTES ------------>
 

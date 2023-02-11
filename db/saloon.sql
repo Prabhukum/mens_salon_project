@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: sql304.epizy.com
--- Generation Time: Feb 10, 2023 at 03:24 PM
--- Server version: 10.3.27-MariaDB
--- PHP Version: 7.2.22
+-- Host: localhost
+-- Generation Time: Feb 11, 2023 at 07:48 AM
+-- Server version: 8.0.31
+-- PHP Version: 7.4.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `epiz_32968153_saloon`
+-- Database: `saloon`
 --
 
 -- --------------------------------------------------------
@@ -28,8 +27,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `tbl_product`
 --
 
-DROP TABLE IF EXISTS `tbl_product`;
-CREATE TABLE IF NOT EXISTS `tbl_product` (
+CREATE TABLE `tbl_product` (
   `p_id` int NOT NULL,
   `p_name` varchar(255) NOT NULL,
   `p_old_price` varchar(10) NOT NULL,
@@ -43,8 +41,7 @@ CREATE TABLE IF NOT EXISTS `tbl_product` (
   `p_total_view` int DEFAULT NULL,
   `p_is_featured` int DEFAULT NULL,
   `p_is_active` int DEFAULT NULL,
-  `ecat_id` int DEFAULT NULL,
-  PRIMARY KEY (`p_id`)
+  `ecat_id` int DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -60,14 +57,40 @@ INSERT INTO `tbl_product` (`p_id`, `p_name`, `p_old_price`, `p_current_price`, `
 (17, 'Hair Cut', '150', '99', NULL, 'Hair_cut.jpg', '100% Genuine hair products', 'Ammonia free products', 'Best finish', '20 mins', 4, 0, 1, 105);
 
 -- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_services`
+--
+
+CREATE TABLE `tbl_services` (
+  `s_id` int NOT NULL,
+  `s_name` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+  `s_image` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `s_link` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `s_desc` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `s_is_active` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `tbl_services`
+--
+
+INSERT INTO `tbl_services` (`s_id`, `s_name`, `s_image`, `s_link`, `s_desc`, `s_is_active`) VALUES
+(11, 'Haircut for Men & Kid\'s', 'pexels-kevin-bidwell-9491365.jpg', 'haircut for men & kid\'s Card-Section.php', 'Get the perfect look with our expert haircuts for men and kids. Trust us for a fresh, clean cut every time.', 1),
+(12, 'Hair color', 'pexels-john-diez-7389074.jpg', 'Hair color Card-Section.html', 'Experience the convenience of at-home hair coloring with our selection of premium hair color products.', 1),
+(13, 'Tatoo\'s', 'pexels-fulvio-pessi-4655687.jpg', 'Tatoo Card-Section.html', 'Express your individuality with our range <br>of top-quality tattoo products,<br>our tattoo products are <br>the perfect choice for you.', 0),
+(14, 'Shave/beard', 'pexels-cottonbro-studio-3998419 (1).jpg', 'Shave_Beard_Card_Section.html', 'Get a smooth and clean shave from the comfort of your own home with our selection of top-quality shaving products.', 1),
+(15, 'Bridal makeup', 'pexels-cottonbro-studio-3998419 (1).jpg', 'Bridal_Makeup_Card_Section.html', 'Look stunning on your special day with our bridal makeup services.', 1),
+(16, 'Ear & Body <br>piercing', 'pexels-maiza-campos-11390512.jpg', 'Ear & Body Piercing.html', 'Add a touch of elegance to your look with our range of ear piercings.', 1);
+
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `users`
 --
-DROP TABLE IF EXISTS `users`;
+
 CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
+  `id` int NOT NULL,
   `username` varchar(50) NOT NULL,
   `email` varchar(100) NOT NULL,
   `password` varchar(255) NOT NULL,
@@ -92,6 +115,18 @@ INSERT INTO `users` (`id`, `username`, `email`, `password`, `exp_date`, `reset_l
 --
 
 --
+-- Indexes for table `tbl_product`
+--
+ALTER TABLE `tbl_product`
+  ADD PRIMARY KEY (`p_id`);
+
+--
+-- Indexes for table `tbl_services`
+--
+ALTER TABLE `tbl_services`
+  ADD PRIMARY KEY (`s_id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -108,7 +143,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

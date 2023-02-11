@@ -243,13 +243,12 @@ rel="stylesheet"
                 </div>
               </div>
             </div>
-            </div>
 
 
             <?php
                 }
             ?>	
-
+            </div>
 
           <!-- Small devices -->
           <div class="container py-5 d-lg-none d-md-block d-sm-block">
