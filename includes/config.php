@@ -3,7 +3,7 @@
 	session_start();
     ini_set("display_errors","0");
 
-    $mode = "local";
+    $mode = "production";
     global $pdo;
     if ($mode == "local") {
         // Host Name
@@ -35,17 +35,17 @@
         }
     }
     if ($mode == "production") {
-
-        $dbhost = 'sql304.epizy.com';
+        // Host Name
+        $dbhost = 'localhost';
 
         // Database Name
-        $dbname = 'epiz_32968153_saloon';
+        $dbname = 'saloon';
 
         // Database Username
-        $dbuser = 'epiz_32968153';
+        $dbuser = 'root';
 
         // Database Password
-        $dbpass = '9cLcFv93ECj8qM';
+        $dbpass = 'Ajith@123$';
 
         // Defining base url
         define("BASE_URL", "");
@@ -53,7 +53,7 @@
         // Getting Admin url
         define("ADMIN_URL", BASE_URL . "admin" . "/");
 
-        $dbcon = mysqli_connect("sql304.epizy.com", "epiz_32968153", "9cLcFv93ECj8qM", "epiz_32968153_saloon") or die("Could not connect to Database");
+        $dbcon = mysqli_connect("localhost", "root", "Ajith@123$", "saloon") or die("Could not connect to Database");
    
         try {
             $pdo = new PDO("mysql:host={$dbhost};dbname={$dbname}", $dbuser, $dbpass);
