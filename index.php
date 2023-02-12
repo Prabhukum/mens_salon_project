@@ -77,11 +77,11 @@
        
         <div class="dropdown">
   <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-    Select Location
+    Select Services
   </a>
 
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <li><a class="dropdown-item" href="#">Tiruttani</a></li>
+    <li><a class="dropdown-item" href="#">gergsdr</a></li>
     <li><a class="dropdown-item" href="#">Sholingur</a></li>
     <li><a class="dropdown-item" href="#">Arakkonam</a></li>
     <li><a class="dropdown-item" href="#">Arcot</a></li>
