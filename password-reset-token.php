@@ -35,7 +35,7 @@ if(isset($_POST['password-reset-token']) && $_POST['email'])
       if ($mode == "local") {
         $link = "<a href='http://menslook.in/reset-password.php?key=" . $emailId . "&token=" . $token . "'>Click To Reset password</a>";
       } elseif ($mode == "production") {
-        $link = "<a href='https://sholinghur-saloon.my-style.in/reset-password.php?key=" . $emailId . "&token=" . $token . "'>Click To Reset password</a>";
+        $link = "<a href='http://menslook.ddns.net/reset-password.php?key=" . $emailId . "&token=" . $token . "'>Click To Reset password</a>";
       }
     require_once('vendor/autoload.php');
  
