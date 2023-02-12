@@ -5,6 +5,7 @@
 
     $mode = "production";
     global $pdo;
+    global $dbcon;
     if ($mode == "local") {
         // Host Name
         $dbhost = 'localhost';
