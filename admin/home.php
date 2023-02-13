@@ -32,7 +32,7 @@ if(isset($_POST["fetched_p_name"])
   $fetched_p_name = $_POST["fetched_p_name"];
   $fetched_p_old_price = $_POST["fetched_p_old_price"];
   $fetched_p_current_price = $_POST["fetched_p_current_price"];
-  $fetched_p_qty = $_POST["fetched_p_qty"];
+  $fetched_p_qty = (int) $_POST["fetched_p_qty"];
   $fetched_p_featured_photo = $_POST["fetched_p_featured_photo"];
   $fetched_p_description = $_POST["fetched_p_description"];
   $fetched_p_short_description = $_POST["fetched_p_short_description"];
