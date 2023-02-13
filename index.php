@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Men's Look</title>
+    <title>Sholinghur Saloon</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -81,22 +81,10 @@
   </a>
 
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-
-  <?php
-        $statement = $pdo->prepare("SELECT * FROM tbl_services where in_dropdown=?");
-        // $statement = $pdo->prepare("SELECT * FROM tbl_product");
-        $statement->execute(array(1));
-        $result = $statement->fetchAll(PDO::FETCH_ASSOC);  
-        $i = 0;                         
-        foreach ($result as $row) {
-      ?>     
- 
-    <li><a class="dropdown-item" href="#"><?php echo $row['s_name']; ?></a></li>
-
-
-  <?php
-        }
-      ?>	
+    <li><a class="dropdown-item" href="#">gergsdr</a></li>
+    <li><a class="dropdown-item" href="#">Sur</a></li>
+    <li><a class="dropdown-item" href="#">Arakkonam</a></li>
+    <li><a class="dropdown-item" href="#">Arcot</a></li>
   </ul>
 </div>
     
