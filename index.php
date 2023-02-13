@@ -81,10 +81,22 @@
   </a>
 
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <li><a class="dropdown-item" href="#">Short Hair</a></li>
-    <li><a class="dropdown-item" href="#">Medium Hair</a></li>
-    <li><a class="dropdown-item" href="#">Long Hair</a></li>
-    <li><a class="dropdown-item" href="#">Man Bun</a></li>
+
+  <?php
+        $statement = $pdo->prepare("SELECT * FROM tbl_services where in_dropdown=?");
+        // $statement = $pdo->prepare("SELECT * FROM tbl_product");
+        $statement->execute(array(1));
+        $result = $statement->fetchAll(PDO::FETCH_ASSOC);  
+        $i = 0;                         
+        foreach ($result as $row) {
+      ?>     
+ 
+    <li><a class="dropdown-item" href="#"><?php echo $row['s_name']; ?></a></li>
+
+
+  <?php
+        }
+      ?>	
   </ul>
 </div>
     
