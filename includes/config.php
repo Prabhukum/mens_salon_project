@@ -3,7 +3,7 @@
 	session_start();
     ini_set("display_errors","0");
 
-    $mode = "production";
+    $mode = "local";
     global $pdo;
     global $dbcon;
     if ($mode == "local") {
@@ -25,7 +25,7 @@
         // Getting Admin url
         define("ADMIN_URL", BASE_URL . "admin" . "/");
 
-        $dbcon = mysqli_connect("localhost", "root", "mysql", "saloon") or die("Could not connect to Database");
+        $dbcon = mysqli_connect($dbhost, $dbuser, $dbpass , $dbname) or die("Could not connect to Database");
 
         try {
             $pdo = new PDO("mysql:host={$dbhost};dbname={$dbname}", $dbuser, $dbpass);
@@ -35,7 +35,7 @@
             echo "Connection error :" . $exception->getMessage();
         }
     }
-    if ($mode == "production") {
+    if ($mode == "local") {
         // Host Name
         $dbhost = 'localhost';
 

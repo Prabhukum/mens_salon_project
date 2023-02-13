@@ -14,8 +14,8 @@ body {
 }
 
 .marketing{
-   background-color: rgb(255, 255, 255);
-   
+   /* background-color: rgb(255, 255, 255); */
+   background-image: url("app\saloon\pexels-pixabay-326347.jpg");
 }
 
 /* CUSTOMIZE THE CAROUSEL
