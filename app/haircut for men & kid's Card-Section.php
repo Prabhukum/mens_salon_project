@@ -102,7 +102,7 @@ rel="stylesheet"
                       <div class="thumb-wrapper bg-dark">
                          
                         <div class="img-box">
-                          <img src="./saloon/<?php echo $row['p_featured_photo']; ?>" class="img-fluid" alt="<?php echo $row['p_name']; ?>">									
+                          <img src="saloon/<?php echo $row['p_featured_photo']; ?>" class="img-fluid" alt="<?php echo $row['p_name']; ?>">									
                         </div>
                         <div class="thumb-content">
                           <h><?php echo $row['p_name']; ?></h>									
@@ -150,7 +150,7 @@ rel="stylesheet"
                 <div class="item"><div class="thumb-wrapper bg-dark">
                          
                   <div class="img-box">
-                    <img src="./saloon/<?php echo $row['p_featured_photo']; ?>" class="img-fluid" alt="<?php echo $row['p_name']; ?>">									
+                    <img src="saloon/<?php echo $row['p_featured_photo']; ?>" class="img-fluid" alt="<?php echo $row['p_name']; ?>">									
                   </div>
                   <div class="thumb-content">
                     <h><?php echo $row['p_name']; ?></h>									
@@ -196,7 +196,7 @@ rel="stylesheet"
                     <div class="row">
                       <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
                         <div class="bg-image hover-zoom ripple rounded ripple-surface">
-                          <img src=".app/icons<?php echo $row['p_featured_photo']; ?>"
+                          <img src="../app/icons/<?php echo $row['p_featured_photo']; ?>"
                             class="w-100"/>
                           <a href="#!">
                             <div class="hover-overlay">
@@ -264,7 +264,7 @@ rel="stylesheet"
                     <div class="row">
                       <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
                         <div class="bg-image hover-zoom ripple rounded ripple-surface">
-                          <img src="./saloon/<?php echo $row['p_featured_photo']; ?>"
+                          <img src="saloon/<?php echo $row['p_featured_photo']; ?>"
                             class="w-100"/>
                           <a href="#!">
                             <div class="hover-overlay">
