@@ -92,9 +92,16 @@
   </div>
   
   <div class="offcanvas-body">
-   <a href="<?php echo $row['s_link']; ?>" class="text-light">Home</a><hr class=" text-light">
-   <a href="">My Orders</a><hr class= "text-light">
-   <a href="">Membership</a><hr class= "text-light">
+    <?php 
+      $statement = $pdo->prepare("SELECT * FROM navbar");
+      $statement->execute();
+      $result = $statement->fetchAll(PDO::FETCH_ASSOC);  
+      foreach ($result as $row) { 
+    ?>
+      <a href="#" class="text-light"><?php echo $row['nav_item']; ?></a><hr class=" text-light">
+   <?php
+      }
+    ?>
   </div>
 </div>
 <!-- End of offcanvas -->

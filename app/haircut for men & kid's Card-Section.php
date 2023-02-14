@@ -196,7 +196,7 @@ rel="stylesheet"
                     <div class="row">
                       <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
                         <div class="bg-image hover-zoom ripple rounded ripple-surface">
-                          <img src="./saloon/<?php echo $row['p_featured_photo']; ?>"
+                          <img src=".app/icons<?php echo $row['p_featured_photo']; ?>"
                             class="w-100"/>
                           <a href="#!">
                             <div class="hover-overlay">
@@ -206,22 +206,20 @@ rel="stylesheet"
                         </div>
                       </div>
                       <div class="col-md-6 col-lg-6 col-xl-6">
-                        <h5><?php echo $row['p_name']; ?></h5>
-                        
-                        <div class="d-flex flex-row">
-                       
+                            <h5><?php echo $row['p_name']; ?></h5>
+                           <div class="d-flex flex-row">
                             <span class="mt-1">• <?php echo $row['p_service_time']; ?></span>
                         </div>
                         <div class="mt-3 mb-0 text-muted small">
-                          <span><?php echo $row['p_description']; ?></span>
+                          <span><?php echo $row['p_description']; ?></span><br>
                           <span class="text-primary"> • </span>
                           <span><?php echo $row['p_short_description']; ?></span>
                           <span class="text-primary"> • </span>
                           <span><?php echo $row['p_feature']; ?><br /></span>
                         </div>
-                       
                         <p class="mt-4 mb-4 mb-md-0">Let your hair do the talking.</p>
                       </div>
+
                       <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
                         <div class="d-flex flex-row align-items-center mb-1">
                           <h4 class="mb-1 me-1">₹<?php echo $row['p_current_price']; ?></h4>
@@ -229,8 +227,7 @@ rel="stylesheet"
                         </div>
                         <h6 class="text-success">Free home services</h6>
                         <div class="d-flex flex-column mt-4">
-                          
-                          <button class="btn-small-ser mt-2" type="button">
+                            <button class="btn-small-ser mt-2" type="button">
                             Book now
                           </button>
                           <button class="btn-small-ser mt-2" type="button">
