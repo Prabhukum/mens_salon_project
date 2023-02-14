@@ -51,18 +51,22 @@
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"> <img src="app\saloon\favicon.ico" width="30" height="30" alt=""> mens salon</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#offcanvasDark" aria-controls="offcanvasDarkLabel" aria-expanded="false" aria-label="Toggle navigation"> -->
+      <button class="btn btn-secondary d-sm-block d-md-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDark" aria-controls="offcanvasDarkLabel"><span class="navbar-toggler-icon"></span></button>
+      
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <!-- <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">TIRUTTANI</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="#">SHOLINGUR</a>
           </li>
-          <?php
+          <li class="nav-item">
+            <a class="nav-link" href="#">ARAKKONAM</a>
+          </li> -->
+          <!-- <?php
           if(!$_SESSION['id']) {
             echo '          <li class="nav-item">
             <a class="nav-link mr-15"href="login.php">Login/signUp <img src="app\icons\user.png" width="20" height="20" alt=""></i></a>
@@ -72,28 +76,28 @@
             <a class="nav-link "href="logout.php">LogOut</a>
           </li>';
           }
-          ?>
+          ?> -->
         </ul>
-       
-        <div class="dropdown">
-  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-    Select Services
-  </a>
-
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <li><a class="dropdown-item" href="#">gergsdr</a></li>
-    <li><a class="dropdown-item" href="#">Sur</a></li>
-    <li><a class="dropdown-item" href="#">Arakkonam</a></li>
-    <li><a class="dropdown-item" href="#">Arcot</a></li>
-  </ul>
-</div>
-    
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDark" aria-controls="offcanvasDarkLabel">Toggle top offcanvas</button>
       </div>
     </div>
   </nav>
 </header>
 
 <main>
+<div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasDark" aria-labelledby="offcanvasDarkLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title text-light" id="offcanvasDarkLabel">Offcanvas top</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  
+  <div class="offcanvas-body">
+   <a href="<?php echo $row['s_link']; ?>" class="text-light">Home</a><hr class=" text-light">
+   <a href="">My Orders</a><hr class= "text-light">
+   <a href="">Membership</a><hr class= "text-light">
+  </div>
+</div>
+<!-- End of offcanvas -->
      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
