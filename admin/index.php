@@ -4,7 +4,7 @@
 	include("../includes/queries.php");
 	
 	if($_SESSION['is_admin'])
-        header("Location:home.php");
+        header("Location:product.php");
     else if($_POST["username-ver"] && $_POST["password-ver"])
 	{
 		$username = $_POST["username-ver"];
@@ -21,7 +21,7 @@
                 $_SESSION['id'] = $user['id'];
                 $_SESSION['username'] = $user['username'];
                 $_SESSION['is_admin'] = $user['is_admin'];
-                header("Location:home.php");
+                header("Location:product.php");
             }
 		}
 		else

@@ -20,7 +20,7 @@ if(isset($_POST['password-reset-token']) && $_POST['email'])
 		$statement->execute();
 		if ($statement->rowCount() > 0)
 		{
-     
+  
      $token = md5($emailId).rand(10,9999);
  
      $expFormat = mktime(
