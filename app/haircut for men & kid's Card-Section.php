@@ -57,8 +57,7 @@ rel="stylesheet"
 
 <body>
   <div class="header">
-    
-  </div>
+ </div>
     <div class="container content-items">
       <div class="content-text mt-5">
       <div class="banner d-lg-flex justify-content-between">
@@ -196,7 +195,7 @@ rel="stylesheet"
                     <div class="row">
                       <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
                         <div class="bg-image hover-zoom ripple rounded ripple-surface">
-                          <img src="../app/icons/<?php echo $row['p_featured_photo']; ?>"
+                          <img src="icons/<?php echo $row['p_featured_photo']; ?>"
                             class="w-100"/>
                           <a href="#!">
                             <div class="hover-overlay">
@@ -264,7 +263,7 @@ rel="stylesheet"
                     <div class="row">
                       <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
                         <div class="bg-image hover-zoom ripple rounded ripple-surface">
-                          <img src="saloon/<?php echo $row['p_featured_photo']; ?>"
+                          <img src="icons/<?php echo $row['p_featured_photo']; ?>"
                             class="w-100"/>
                           <a href="#!">
                             <div class="hover-overlay">
