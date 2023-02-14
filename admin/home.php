@@ -16,7 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="icon" href="saloon/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../includes/css/hair_cut_for_men">
+    <link rel="stylesheet" href="../includes/css/hair_cut_for_men.css">
 
     <style>
       .form-control {
@@ -156,7 +156,7 @@ if(isset($_POST["fetched_p_name"])
       </div>
       <div class="form-group">
         <tr><td><label>Is Active</label></td><td>
-        <input type="radio" name="fetched_p_is_active" value="0" id="fetched_p_is_active1" <?php if($row["p_is_active"] == 0) echo "checked"; ?>> OFF  
+          <input type="radio" name="fetched_p_is_active" value="0" id="fetched_p_is_active1" <?php if($row["p_is_active"] == 0) echo "checked"; ?>> OFF  
           <input type="radio" name="fetched_p_is_active" value="1" id="fetched_p_is_active2" <?php if($row["p_is_active"] == 1) echo "checked"; ?>> ON
         </td></tr>
       </div>
