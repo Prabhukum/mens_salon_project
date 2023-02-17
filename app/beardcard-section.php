@@ -48,12 +48,12 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
-  background: #d83133;
+  background:black;
   clip-path: circle(120px at center);
   transition: 0.5s;
 }
 .card:hover .circle::before{
-  background: #0065c3;
+  background: black;
   clip-path: circle(400px at center);
 }
 .card img{
@@ -118,17 +118,73 @@ body{
 </head>
 
 <body>
-
-  <div class="card">
+<div class= "col-lg-4 mt-5">
+  <div class="card col-lg-4">
+    <div class="circle ">
+    <div class="content ">
+      <h2 class="mt-lg-3">Low Fade</h2>
+      <h3>Long hair</h3>
+      <p class="mt-lg-4 px-lg-5">easy to maintain and gentle look.</p>
+      <a href="">Book Now</a>
+    </div>
+    <img src="..\app\icons\low-taper-fade-haircut-medium-side-part-683x1024.jpg" width="50%" height="15%" alt="">
+   </div>
+   </div>
+  <div class="card col-lg-4">
     <div class="circle"></div>
     <div class="content">
-      <h2>Pepsi</h2>
-      <h3>Zero Sugar</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <a href="">Buy Now</a>
+      <h2>Low Fade</h2>
+      <h3>Long hair</h3>
+      <p>easy to maintain and gentle look.</p>
+      <a href="">Book Now</a>
     </div>
-    <img src="https://www.pepsi.com/en-us/uploads/images/can-pzs.png" alt="">
+    <img src="..\app\icons\low-taper-fade-haircut-medium-side-part-683x1024.jpg" width="50%" height="50%" alt="">
   </div>
+  <div class="card col-lg-4">
+    <div class="circle "></div>
+    <div class="content">
+      <h2>Low Fade</h2>
+      <h3>Long hair</h3>
+      <p>easy to maintain and gentle look.</p>
+      <a href="">Book Now</a>
+    </div>
+    <img src="..\app\icons\low-taper-fade-haircut-medium-side-part-683x1024.jpg" width="50%" height="50%" alt="">
+  </div>
+
+  <div class="card col-lg-4">
+    <div class="circle"></div>
+    <div class="content">
+      <h2>Low Fade</h2>
+      <h3>Long hair</h3>
+      <p>easy to maintain and gentle look.</p>
+      <a href="">Book Now</a>
+    </div>
+    <img src="..\app\icons\low-taper-fade-haircut-medium-side-part-683x1024.jpg" width="50%" height="50%" alt="">
+  </div>
+  <div class="card col-lg-4">
+    <div class="circle"></div>
+    <div class="content">
+      <h2>Low Fade</h2>
+      <h3>Long hair</h3>
+      <p>easy to maintain and gentle look.</p>
+      <a href="">Book Now</a>
+    </div>
+    <img src="..\app\icons\low-taper-fade-haircut-medium-side-part-683x1024.jpg" width="50%" height="50%" alt="">
+  </div>
+  <div class="card col-lg-4">
+    <div class="circle"></div>
+    <div class="content">
+      <h2>Low Fade</h2>
+      <h3>Long hair</h3>
+      <p>easy to maintain and gentle look.</p>
+      <a href="">Book Now</a>
+    </div>
+    <img src="..\app\icons\low-taper-fade-haircut-medium-side-part-683x1024.jpg" width="50%" height="50%" alt="">
+  </div>
+
+
+  </div>
+
 
 </body>
 
