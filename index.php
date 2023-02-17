@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Sholinghur Saloon</title>
+    <title>Men's Look</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -50,7 +50,7 @@
 <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"> <img src="app\saloon\favicon.ico" width="30" height="30" alt=""> mens salon</a>
+      <a class="navbar-brand" href="#"> <img src="app\saloon\favicon.ico" width="30" height="30" alt=""> Men's Saloon</a>
       <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#offcanvasDark" aria-controls="offcanvasDarkLabel" aria-expanded="false" aria-label="Toggle navigation"> -->
       <button class="btn btn-secondary d-sm-block d-md-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDark" aria-controls="offcanvasDarkLabel"><span class="navbar-toggler-icon"></span></button>
       
@@ -78,7 +78,7 @@
           }
           ?> -->
         </ul>
-    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDark" aria-controls="offcanvasDarkLabel">Toggle top offcanvas</button>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDark" aria-controls="offcanvasDarkLabel">Menu</button>
       </div>
     </div>
   </nav>
@@ -87,7 +87,7 @@
 <main>
 <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasDark" aria-labelledby="offcanvasDarkLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title text-light" id="offcanvasDarkLabel">Offcanvas top</h5>
+    <h5 class="offcanvas-title text-light" id="offcanvasDarkLabel">Menu</h5>
     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   
@@ -100,6 +100,13 @@
     ?>
       <a href="#" class="text-light"><?php echo $row['nav_item']; ?></a><hr class=" text-light">
    <?php
+      }
+    ?>
+    <?php
+      if(!$_SESSION['id']) {
+        echo '<a href="login.php" class="text-light">Login/Sign up</a><hr class=" text-light">';
+      } else {
+        echo '<a href="logout.php" class="text-light">Logout</a><hr class=" text-light">';
       }
     ?>
   </div>
