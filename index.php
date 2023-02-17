@@ -124,14 +124,14 @@
         <video class="img-fluid" autoplay loop muted><source src="app\videos\pexels-dronca-rafael-7085993.mp4" type="video/mp4" /></video>
         <div class="carousel-caption dd-md-block">
           <h5></h5>
-          <p>Some representative placeholder content for the second slide.</p>
+          <p></p>
         </div>
       </div>
       <div class="carousel-item">
         <video class="img-fluid" autoplay loop muted><source src="app/videos/V3.mp4" type="video/mp4" /></video>
         <div class="carousel-caption d-md-block">
           <h5></h5>
-          <p>Some representative placeholder content for the third slide.</p>
+          <p></p>
         </div>
       </div>
     </div>
