@@ -1,6 +1,7 @@
-<?php
+-- <?php
 	include("includes/config.php");
-	// if(!$_SESSION['id'])
+  include("includes/index.php");
+  	// if(!$_SESSION['id'])
 	// 	header("Location:login.php");
 ?>
 <!doctype html>
@@ -112,45 +113,6 @@
   </div>
 </div>
 <!-- End of offcanvas -->
-     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <video class="img-fluid" autoplay loop muted><source src="app\videos\V1 Adobeexpress.mp4" type="video/mp4" /></video>
-        <div class="carousel-caption d-md-block">
-          <h1>Salon at home experience</h1>
-          <p class="mb-sm-2">"Welcome to the comfort of your own home..</p>
-          <p><a class="btn btn-lg btn-dark" href="#scrolldown">Book Services &raquo;</a></p> 
-        </div>
-      </div>
-      <div class="carousel-item">
-        <video class="img-fluid" autoplay loop muted><source src="app\videos\pexels-dronca-rafael-7085993.mp4" type="video/mp4" /></video>
-        <div class="carousel-caption dd-md-block">
-          <h5></h5>
-          <p></p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <video class="img-fluid" autoplay loop muted><source src="app/videos/V3.mp4" type="video/mp4" /></video>
-        <div class="carousel-caption d-md-block">
-          <h5></h5>
-          <p></p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 
 
   <!-- Marketing messaging and featurettes
@@ -195,51 +157,30 @@
 
     <!----------------- START THE FEATURETTES ------------>
 
-    <hr class="featurette-divider">
 
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading"><a href="hair straightening page">Hair Straightening</a><span class="text-muted"><br>It’ll blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
-      </div>
-
-       <div class="col-md-5">
-        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
-        <video class="img-fluid" autoplay loop muted><source src="app\videos\Production Id 3997179 Adobeexpress_preview.mp4" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" type="video/mp4" /></video>
-        </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading"><a href="faical page">facial </a><span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="https://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>  -->
-        <video class="img-fluid" autoplay loop muted><source src="app\videos\pexels-tima-miroshnichenko-7607766_AdobeExpress.mp4" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" type="video/mp4" /></video>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette"> <!-- image container backgound -->
-      <div class="col-md-7">
-        <h2 class="featurette-heading" class="rounded">And lastly,<a href="head massage page"><kbd>Head massage</kbd></a><span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-      </div>
-      <div class="col-md-5">
-       <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="https://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>  -->
-       <video class="img-fluid" autoplay loop muted><source src="app\videos\Pexels-Kelly-Lacy-9737984 Adobeexpress_preview.mp4" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" type="video/mp4" /></video>
-      </div> 
-    </div>
-   
-    <hr class="featurette-divider">
-
-    <!-- /END THE FEATURETTES -->
- 
-  </div><!-- /.container -->
+    <div class="container" style="margin-top:50px;">
+        <div class="row">
+            
+        <div class="col-md-3">
+                <div class="card-sl">
+                  
+                <div class="card-image">
+                        <img src="../app/icons/perm-men-hairstyles-wavy-bowl-cut-medium-layered-683x1024.jpg" />
+                    </div>
+                       <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+                    <div class="card-heading">
+                        Audi Q8
+                    </div>
+                    <div class="card-text">
+                        Audi Q8 is a full-size luxury crossover SUV coupé made by Audi that was launched in 2018.
+                    </div>
+                    <div class="card-text">
+                        $67,400
+                    </div>
+                    <a href="#" class="card-button"> Purchase</a>
+                </div>
+            </div>
+        </div>  
 
   <!-- FOOTER -->
   <footer class="container d-sm-block">
@@ -251,5 +192,3 @@
   </body>
  
 </html>
-
-
