@@ -128,7 +128,7 @@ img {
 
 @media (min-width: 56rem) {
   .cards_item {
-    width: 33.3333%;
+    width: 33.3333%; 
   }
 }
 
@@ -139,7 +139,7 @@ img {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background: transparent;
+  background: transparent; 
 }
 
 .card_content {
