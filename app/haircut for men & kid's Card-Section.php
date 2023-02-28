@@ -56,23 +56,14 @@ rel="stylesheet"
 <header>
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"> <img src="app\saloon\favicon.ico" width="30" height="30" alt=""> Men's Saloon</a>
+      <a class="navbar-brand" href="#"> <img src="..\app\saloon\favicon.ico" width="30" height="30" alt=""> Men's Saloon</a>
       <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#offcanvasDark" aria-controls="offcanvasDarkLabel" aria-expanded="false" aria-label="Toggle navigation"> -->
       <button class="btn btn-secondary d-sm-block d-md-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDark" aria-controls="offcanvasDarkLabel"><span class="navbar-toggler-icon"></span></button>
       
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <!-- <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">TIRUTTANI</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">SHOLINGUR</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">ARAKKONAM</a>
-          </li> -->
-          <!-- <?php
+         <!-- <?php
           if(!$_SESSION['id']) {
             echo '          <li class="nav-item">
             <a class="nav-link mr-15"href="login.php">Login/signUp <img src="app\icons\user.png" width="20" height="20" alt=""></i></a>
@@ -126,7 +117,7 @@ rel="stylesheet"
       <div class="content-text mt-5">
       <div class="banner d-lg-flex justify-content-between">
         <div class="banner-content">
-          <h1>Best hair <b>gromming for men</b> at home</h1>
+          <h1>Best  <b>gromming for men</b> at home</h1>
           <h3>Sit back and relax</h3>
         </div>
       <div class="banner-button m-lg-auto">

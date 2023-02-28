@@ -90,6 +90,20 @@ rel="stylesheet"
   </nav>
 </header>
 
+<div class="header">
+ </div>
+    <div class="container content-items">
+      <div class="content-text mt-5">
+      <div class="banner d-lg-flex justify-content-between">
+        <div class="banner-content">
+          <h1>Best Tatoo <b>Designs for men</b> at home</h1>
+          <h3>Sit back and relax</h3>
+        </div>
+      <div class="banner-button m-lg-auto">
+        <button class="btn-lg book-btn">Book Now</button>
+      </div>
+      </div>
+        <hr class="my-lg-4 my-sm-2">
 
 <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasDark" aria-labelledby="offcanvasDarkLabel">
   <div class="offcanvas-header">
@@ -128,11 +142,12 @@ rel="stylesheet"
     <li class="cards_item">
       <div class="card">
         <div class="card_image">
-        <img src="..\app\saloon\pexels-hirsh-philippe-13345951.jpg"></div>
+        <img src="..\app\saloon\pexels-dmitry-zvolskiy-1805600.jpg"></div>
          <div class="card_content">
           <h2 class="card_title">Card Grid Layout</h2>
           <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <p class="item-price"><strike>₹ 500<?php echo $row['p_old_price']; ?></strike> <b><?php echo $row['p_current_price']; ?>rs.55/- </b></p>
+          <p class="item-price strike item-price1 "><strike>₹ 500<?php echo $row['p_old_price']; ?></strike> <b>
+            <?php echo $row['p_current_price']; ?>rs.55/- </b></p>
           <button class="btn-small-ser mt-2" type="button"> Book now </button>
           <a href="#" class="btn-small-ser mt-2">Add to Cart</a>
                          
@@ -146,7 +161,8 @@ rel="stylesheet"
         <div class="card_content">
           <h2 class="card_title">Card Grid Layout</h2>
           <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <p class="item-price"><strike>₹ 500<?php echo $row['p_old_price']; ?></strike> <b><?php echo $row['p_current_price']; ?>rs.55/- </b></p>
+          <p class="item-price strike item-price1 "><strike>₹ 500<?php echo $row['p_old_price']; ?></strike> <b>
+            <?php echo $row['p_current_price']; ?>rs.55/- </b></p>
           <button class="btn-small-ser mt-2" type="button"> Book now </button>
           <a href="#" class="btn-small-ser mt-2">Add to Cart</a>
                          
@@ -159,7 +175,8 @@ rel="stylesheet"
         <div class="card_content">
           <h2 class="card_title">Card Grid Layout</h2>
           <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <p class="item-price"><strike>₹ 500<?php echo $row['p_old_price']; ?></strike> <b><?php echo $row['p_current_price']; ?>rs.55/- </b></p>
+          <p class="item-price strike item-price1 "><strike>₹ 500<?php echo $row['p_old_price']; ?></strike> <b>
+            <?php echo $row['p_current_price']; ?>rs.55/- </b></p>
           <button class="btn-small-ser mt-2" type="button"> Book now </button>
           <a href="#" class="btn-small-ser mt-2">Add to Cart</a>
                          
@@ -172,7 +189,8 @@ rel="stylesheet"
         <div class="card_content">
           <h2 class="card_title">Card Grid Layout</h2>
           <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-             <p class="item-price"><strike>₹ 500<?php echo $row['p_old_price']; ?></strike> <b><?php echo $row['p_current_price']; ?>rs.55/- </b></p>
+          <p class="item-price strike item-price1 "><strike>₹ 500<?php echo $row['p_old_price']; ?></strike> <b>
+            <?php echo $row['p_current_price']; ?>rs.55/- </b></p>
           <button class="btn-small-ser mt-2" type="button"> Book now </button>
           <a href="#" class="btn-small-ser mt-2">Add to Cart</a>
         </div>
@@ -184,7 +202,9 @@ rel="stylesheet"
         <div class="card_content">
           <h2 class="card_title">Card Grid Layout</h2>
           <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <p class="item-price"><strike>₹ 500<?php echo $row['p_old_price']; ?></strike> <b><?php echo $row['p_current_price']; ?>rs.55/- </b></p>
+          <p class="item-price strike item-price1 "><strike>₹ 500<?php echo $row['p_old_price']; ?></strike> <b>
+            <?php echo $row['p_current_price']; ?>rs.55/- </b></p>
+         
           <button class="btn-small-ser mt-2" type="button"> Book now </button>
           <a href="#" class="btn-small-ser mt-2">Add to Cart</a>
                          
@@ -197,7 +217,8 @@ rel="stylesheet"
         <div class="card_content">
           <h2 class="card_title">Card Grid Layout</h2>
           <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <p class="item-price"><strike>₹ 500<?php echo $row['p_old_price']; ?></strike> <b><?php echo $row['p_current_price']; ?>rs.55/- </b></p>
+          <p class="item-price strike item-price1 "><strike>₹ 500<?php echo $row['p_old_price']; ?></strike> <b>
+            <?php echo $row['p_current_price']; ?>rs.55/- </b></p>
           <button class="btn-small-ser mt-2" type="button"> Book now </button>
           <a href="#" class="btn-small-ser mt-2">Add to Cart</a>             
         </div>
