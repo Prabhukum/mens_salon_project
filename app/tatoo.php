@@ -5,7 +5,7 @@
 
 <html lang="en">
 <head>
-  <title>Tatoo Session</title>
+  <title>Different Tattoo Styles</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -54,25 +54,16 @@ rel="stylesheet"
 </head>
 
 <header>
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-transparent">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-nav">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"> <img src="..\app\saloon\favicon.ico" width="30" height="30" alt=""> Men's Saloon</a>
+      <a class="navbar-brand " href="#"> <img src="..\app\saloon\favicon.ico" width="30" height="30" alt=""> Men's Saloon</a>
       <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#offcanvasDark" aria-controls="offcanvasDarkLabel" aria-expanded="false" aria-label="Toggle navigation"> -->
       <button class="btn btn-secondary d-sm-block d-md-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDark" aria-controls="offcanvasDarkLabel"><span class="navbar-toggler-icon"></span></button>
       
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <!-- <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">TIRUTTANI</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">SHOLINGUR</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">ARAKKONAM</a>
-          </li> -->
-          <!-- <?php
+            <!-- <?php
           if(!$_SESSION['id']) {
             echo '          <li class="nav-item">
             <a class="nav-link mr-15"href="login.php">Login/signUp <img src="app\icons\user.png" width="20" height="20" alt=""></i></a>
@@ -147,7 +138,7 @@ rel="stylesheet"
           <h2 class="card_title">Card Grid Layout</h2>
           <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
           <p class="item-price strike item-price1 "><strike>₹ 500<?php echo $row['p_old_price']; ?></strike> <b>
-            <?php echo $row['p_current_price']; ?>rs.55/- </b></p>
+            <?php echo $row['p_current_price']; ?>₹ 55/- </b></p>
           <button class="btn-small-ser mt-2" type="button"> Book now </button>
           <a href="#" class="btn-small-ser mt-2">Add to Cart</a>
                          
@@ -162,7 +153,7 @@ rel="stylesheet"
           <h2 class="card_title">Card Grid Layout</h2>
           <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
           <p class="item-price strike item-price1 "><strike>₹ 500<?php echo $row['p_old_price']; ?></strike> <b>
-            <?php echo $row['p_current_price']; ?>rs.55/- </b></p>
+            <?php echo $row['p_current_price']; ?>₹ 55/- </b></p>
           <button class="btn-small-ser mt-2" type="button"> Book now </button>
           <a href="#" class="btn-small-ser mt-2">Add to Cart</a>
                          
@@ -176,7 +167,7 @@ rel="stylesheet"
           <h2 class="card_title">Card Grid Layout</h2>
           <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
           <p class="item-price strike item-price1 "><strike>₹ 500<?php echo $row['p_old_price']; ?></strike> <b>
-            <?php echo $row['p_current_price']; ?>rs.55/- </b></p>
+            <?php echo $row['p_current_price']; ?>₹ 55/- </b></p>
           <button class="btn-small-ser mt-2" type="button"> Book now </button>
           <a href="#" class="btn-small-ser mt-2">Add to Cart</a>
                          
@@ -190,7 +181,7 @@ rel="stylesheet"
           <h2 class="card_title">Card Grid Layout</h2>
           <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
           <p class="item-price strike item-price1 "><strike>₹ 500<?php echo $row['p_old_price']; ?></strike> <b>
-            <?php echo $row['p_current_price']; ?>rs.55/- </b></p>
+            <?php echo $row['p_current_price']; ?>₹ 55/- </b></p>
           <button class="btn-small-ser mt-2" type="button"> Book now </button>
           <a href="#" class="btn-small-ser mt-2">Add to Cart</a>
         </div>
@@ -203,7 +194,7 @@ rel="stylesheet"
           <h2 class="card_title">Card Grid Layout</h2>
           <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
           <p class="item-price strike item-price1 "><strike>₹ 500<?php echo $row['p_old_price']; ?></strike> <b>
-            <?php echo $row['p_current_price']; ?>rs.55/- </b></p>
+            <?php echo $row['p_current_price']; ?>₹55/- </b></p>
          
           <button class="btn-small-ser mt-2" type="button"> Book now </button>
           <a href="#" class="btn-small-ser mt-2">Add to Cart</a>
@@ -218,7 +209,7 @@ rel="stylesheet"
           <h2 class="card_title">Card Grid Layout</h2>
           <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
           <p class="item-price strike item-price1 "><strike>₹ 500<?php echo $row['p_old_price']; ?></strike> <b>
-            <?php echo $row['p_current_price']; ?>rs.55/- </b></p>
+            <?php echo $row['p_current_price']; ?>₹ 55/- </b></p>
           <button class="btn-small-ser mt-2" type="button"> Book now </button>
           <a href="#" class="btn-small-ser mt-2">Add to Cart</a>             
         </div>

@@ -15,31 +15,40 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+
+}
+
+.bg-nav {
+   background-color: #383838;
+   font-family: cursive;
+   color:#e1e4dc;
 }
 
 body {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../../app/saloon/broken-black-eyeshadow-powder-background-min.jpg);
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../../app/saloon/close-up-yellow-smoke-against-black-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  color: #fffbfb;
-  font-family: 'Quicksand', serif;
+  color: #e1e4dc;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
   padding: 1rem;
- 
+  font-family:'Times New Roman', Times, serif;
 }
 
 .item-price1 {
   font-size: 13px;
   padding: 2px 0;
-  color:#000000 ;
+  color:#e1e4dc ;
+  font-family: 'Lucida Handwriting', sans-serif;
+  
 }
 .item-price strike {
   opacity: 0.7;
   margin-right: 5px;
-  color:#b1acac;
+  color:#e1e4dc;
+  font-family: 'Lucida Handwriting', sans-serif;
 }
 
 .main{
@@ -51,8 +60,7 @@ h1 {
     font-size: 24px;
     font-weight: 400;
     text-align: center;
-    
-  color: #fffbfb;
+    color:#e1e4dc;
 }
 
 img {
@@ -61,38 +69,42 @@ img {
   vertical-align: middle;
 }
 .book-btn{
-  color: #7ac400;
+    color: #eeeeeec2 ;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
     background: none;
-    border: 1px solid #7ac400;
+    border: 1px solid #f6fe0063;
     padding: 15px 14px;
     margin-top: 5px;
     line-height: 16px;
     border-radius: 50px;
+    font-family: 'Lucida Handwriting', sans-serif;
   }
   .book-btn:hover {
-    color: #fff;
-    background: #7ac400;
+    color: #eeeeeec2 ;
+    background: #e6ee0144;
     box-shadow: none;
+    font-family: 'Lucida Handwriting', sans-serif;
   }
   .btn-small-ser {
-    color: #7ac400;
+    color: #eeeeeec2 ;
     font-size: 11px;
     text-transform: uppercase;
     font-weight: bold;
     background: none;
-    border: 1px solid #7ac400;
+    border: 1px solid #f6fe0063;
     padding: 6px 14px;
     margin-top: 5px;
     line-height: 16px;
     border-radius: 35px;
+    font-family: 'Lucida Handwriting', sans-serif;
   }
   .btn-small-ser:hover {
-    color: #fff;
-    background: #7ac400;
+    color:#eeeeeec2 ;
+    background:#83850fce ; /*  #7ac400; */
     box-shadow: none;
+    font-family: 'Lucida Handwriting', sans-serif;
   }
   /* For small devices button */
   
@@ -102,17 +114,18 @@ img {
     text-transform: uppercase;
     font-weight: bold;
     background: none;
-  
-    border: 1px solid #7ac400;
+    font-family: 'Lucida Handwriting', sans-serif;
+    border: 1px solid #f6fe0063;
     padding: 6px 14px;
     margin-top: 5px;
     line-height: 13px;
     border-radius: 20px;
   }
   .btn-small:focus {
-    color: #fff;
+    color: #e1e4dc;
     background: #7ac400;
     box-shadow: none;
+    font-family: 'Lucida Handwriting', sans-serif;
   }
 
 
@@ -124,6 +137,8 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+  color: #00000000;
+
 }
 
 .cards_item {
@@ -133,33 +148,33 @@ img {
 
 @media (min-width: 40rem) {
   .cards_item {
-    width: 50%;
+    width: 50%;  border-radius: 50px;
   }
 }
 
 @media (min-width: 56rem) {
   .cards_item {
-    width: 33.3333%; 
+    width: 33.3333%;  border-radius: 50px;
   }
 }
 
 .card {
   /* background-color: transparent; */
   border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 20px 40px -14px rgba(255, 243, 243, 0.25);
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: hidden;  border-radius: 50px;
   background: transparent; 
 }
 
 .card_content {
   padding: 1rem;
-  background: linear-gradient(to bottom left, #868585 30%,  #0f0f0f 100% ); 
+   background: #41420382;   /*#ffffff00 #868585 30%,  #0f0f0f 100%  */
   /* background: transparent; */
 }
 .card_title {
-  color: #000000;
+  color: #e1e4dc;
   font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 1px;
@@ -168,7 +183,7 @@ img {
 }
 
 .card_text {
-  color: #000000;
+  color: #e1e4dc;
   font-size: 0.875rem;
   line-height: 1.5;
   margin-bottom: 1.25rem;    

@@ -33,7 +33,7 @@ rel="stylesheet"
 <!-- MDB -->
 <link
 href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
-rel="stylesheet"
+rel="stylesheet" 
 />
 <!-- Owl corousel -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
