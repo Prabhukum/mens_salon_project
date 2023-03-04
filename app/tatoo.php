@@ -51,6 +51,11 @@ rel="stylesheet"
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <link href="..\includes\css\tatoo_session.css" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+
+<!-- swiper.js -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <header>
@@ -124,6 +129,137 @@ rel="stylesheet"
 </div>
 </header>
 
+<!-- tatoo add session -->
+<body>
+  <div class="all body1 container1 swiper mySwiper">
+    <div class="card_content1 swiper-wrapper">
+      <div class="cards1 swiper-slide">
+        <img src="..\app\saloon\pexels-dmitry-zvolskiy-1805600.jpg " alt=""/>
+        <div class="title1">
+          <h2>tatoo add</h2>
+        </div>
+        <div class="content1">
+          <p>checking paragraph</p>
+          <div class="social_icons">
+        <i class="bx bxl-facebook-circle"></i>
+        <i class="bx bxl-github"></i>
+        <i class="bx bxl-instagram-alt"></i>
+        <i class="bx bxl-twitter"></i>
+          </div>
+        </div>
+      </div>
+      <div class="cards1 swiper-slide">
+        <img src="..\app\saloon\pexels-dmitry-zvolskiy-1805600.jpg " alt=""/>
+        <div class="title1">
+          <h2>tatoo add</h2>
+        </div>
+        <div class="content1">
+          <p>checking paragraph</p>
+          <div class="social_icons">
+        <i class="bx bxl-facebook-circle"></i>
+        <i class="bx bxl-github"></i>
+        <i class="bx bxl-instagram-alt"></i>
+        <i class="bx bxl-twitter"></i>
+          </div>
+        </div>
+      </div>
+      <div class="cards1 swiper-slide">
+        <img src="..\app\saloon\pexels-dmitry-zvolskiy-1805600.jpg " alt=""/>
+        <div class="title1">
+          <h2>tatoo add</h2>
+        </div>
+        <div class="content1">
+          <p>checking paragraph</p>
+          <div class="social_icons">
+        <i class="bx bxl-facebook-circle"></i>
+        <i class="bx bxl-github"></i>
+        <i class="bx bxl-instagram-alt"></i>
+        <i class="bx bxl-twitter"></i>
+          </div>
+        </div>
+      </div>
+      <div class="cards1 swiper-slide">
+        <img src="..\app\saloon\pexels-dmitry-zvolskiy-1805600.jpg " alt=""/>
+        <div class="title1">
+          <h2>tatoo add</h2>
+        </div>
+        <div class="content1">
+          <p>checking paragraph</p>
+          <div class="social_icons">
+        <i class="bx bxl-facebook-circle"></i>
+        <i class="bx bxl-github"></i>
+        <i class="bx bxl-instagram-alt"></i>
+        <i class="bx bxl-twitter"></i>
+          </div>
+        </div>
+      </div>
+      <div class="cards1 swiper-slide">
+        <img src="..\app\saloon\pexels-dmitry-zvolskiy-1805600.jpg " alt=""/>
+        <div class="title1">
+          <h2>tatoo add</h2>
+        </div>
+        <div class="content1">
+          <p>checking paragraph</p>
+          <div class="social_icons">
+        <i class="bx bxl-facebook-circle"></i>
+        <i class="bx bxl-github"></i>
+        <i class="bx bxl-instagram-alt"></i>
+        <i class="bx bxl-twitter"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+      <div class="swiper-pagination"></div>
+  </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      centeredSlides: false,
+      slidesPerGroupSkip: 1,
+      grabCursor: true,
+      keyboard: {
+      enabled: true,
+      },
+      breakpoints: {
+       
+        0: {
+          slidesPerView: 1,
+          slidesPerGroup: 2,
+        },
+
+        689: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+        },
+
+       789: {
+          slidesPerView: 3,
+          slidesPerGroup: 2,
+        },
+        969: {
+          slidesPerView:4,
+          slidesPerGroup: 3,
+        },
+      },
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  <!-- tatoo end session -->
+</body>
 
 <body>
 

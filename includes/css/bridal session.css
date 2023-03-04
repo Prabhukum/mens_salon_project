@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
 /* Design */
- *,
+*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -195,51 +195,51 @@ img {
   margin-top: 35px;
   text-align: center;
 }
- 
+
 
 
 /* tatoo add session */
- 
- .all{
+
+/* *{
   padding:0;
   margin: 0;
   box-sizing: border-box;
   font-family: "poppins",sans-serif;
 }
 
-.body1{
+body{
   display: flex;
   align-items: center;
   justify-content:center ;
-  min-height:50vh;
+  min-height: 100vh;
   background: #34495e;
 }
 
-.container1{
+.container{
   max-width: 1440px;
   margin: 0 auto;
   background: #5d6d7e;
   padding-bottom: 4rem;
 }
 
-.container1 img{
+.container img{
   display: block;
   width: 80%;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
 
-.container1 .card_content{
+.container .card_content{
   display: flex;
   padding: 6rem 2.5rem;
 }
 
-.cards1{
+.cards{
   width: 100%;
   position: relative;
 }
 
-.cards1 .title1{
+.cards .title{
   position: absolute;
   bottom: 0;
   left: 0;
@@ -249,7 +249,7 @@ img {
   padding: 0.4rem;
 }
 
-.content1{
+.content{
   background:#fff;
   text-align: center;
   position: absolute;
@@ -269,7 +269,7 @@ img {
 
 .social_icons i{
   color: #34495e;
-}  
+} 
 
 /* .services-info{
 width: 65%;
