@@ -131,14 +131,14 @@ rel="stylesheet"
 
 <!-- tatoo add session -->
 <body>
-  <div class="all body1 container1 swiper mySwiper">
-    <div class="card_content1 swiper-wrapper">
-      <div class="cards1 swiper-slide">
+  <div class="container swiper mySwiper">
+    <div class="card_content swiper-wrapper">
+      <div class="cards swiper-slide">
         <img src="..\app\saloon\pexels-dmitry-zvolskiy-1805600.jpg " alt=""/>
-        <div class="title1">
+        <div class="title">
           <h2>tatoo add</h2>
         </div>
-        <div class="content1">
+        <div class="content">
           <p>checking paragraph</p>
           <div class="social_icons">
         <i class="bx bxl-facebook-circle"></i>
@@ -148,12 +148,12 @@ rel="stylesheet"
           </div>
         </div>
       </div>
-      <div class="cards1 swiper-slide">
+      <div class="cards swiper-slide">
         <img src="..\app\saloon\pexels-dmitry-zvolskiy-1805600.jpg " alt=""/>
-        <div class="title1">
+        <div class="title">
           <h2>tatoo add</h2>
         </div>
-        <div class="content1">
+        <div class="content">
           <p>checking paragraph</p>
           <div class="social_icons">
         <i class="bx bxl-facebook-circle"></i>
@@ -163,12 +163,12 @@ rel="stylesheet"
           </div>
         </div>
       </div>
-      <div class="cards1 swiper-slide">
+      <div class="cards swiper-slide">
         <img src="..\app\saloon\pexels-dmitry-zvolskiy-1805600.jpg " alt=""/>
-        <div class="title1">
+        <div class="title">
           <h2>tatoo add</h2>
         </div>
-        <div class="content1">
+        <div class="content">
           <p>checking paragraph</p>
           <div class="social_icons">
         <i class="bx bxl-facebook-circle"></i>
@@ -178,12 +178,12 @@ rel="stylesheet"
           </div>
         </div>
       </div>
-      <div class="cards1 swiper-slide">
+      <div class="cards swiper-slide">
         <img src="..\app\saloon\pexels-dmitry-zvolskiy-1805600.jpg " alt=""/>
-        <div class="title1">
+        <div class="title">
           <h2>tatoo add</h2>
         </div>
-        <div class="content1">
+        <div class="content">
           <p>checking paragraph</p>
           <div class="social_icons">
         <i class="bx bxl-facebook-circle"></i>
@@ -193,12 +193,12 @@ rel="stylesheet"
           </div>
         </div>
       </div>
-      <div class="cards1 swiper-slide">
+      <div class="cards swiper-slide">
         <img src="..\app\saloon\pexels-dmitry-zvolskiy-1805600.jpg " alt=""/>
-        <div class="title1">
+        <div class="title">
           <h2>tatoo add</h2>
         </div>
-        <div class="content1">
+        <div class="content">
           <p>checking paragraph</p>
           <div class="social_icons">
         <i class="bx bxl-facebook-circle"></i>
@@ -258,7 +258,6 @@ rel="stylesheet"
       },
     });
   </script>
-  <!-- tatoo end session -->
 </body>
 
 <body>
