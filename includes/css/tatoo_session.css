@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
 /* Design */
- /* *,
+*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -102,11 +102,11 @@ img {
   }
   .btn-small-ser:hover {
     color:#eeeeeec2 ;
-    background:#83850fce ; /*  #7ac400; 
+    background:#83850fce ; /*  #7ac400; */
     box-shadow: none;
     font-family: 'Lucida Handwriting', sans-serif;
   }
-  /* For small devices button 
+  /* For small devices button */
   
   .btn-small {
     color:  #7ac400;
@@ -159,7 +159,7 @@ img {
 }
 
 .card {
-  /* background-color: transparent;
+  /* background-color: transparent; */
   border-radius: 0.25rem;
   box-shadow: 0 20px 40px -14px rgba(255, 243, 243, 0.25);
   display: flex;
@@ -171,7 +171,7 @@ img {
 .card_content {
   padding: 1rem;
    background: #41420382;   /*#ffffff00 #868585 30%,  #0f0f0f 100%  */
-  /* background: transparent; 
+  /* background: transparent; */
 }
 .card_title {
   color: #e1e4dc;
@@ -194,82 +194,7 @@ img {
   font-size: 13px;
   margin-top: 35px;
   text-align: center;
-} */
- 
-
-
-/* tatoo add session */
- 
-*{
-  padding:0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "poppins",sans-serif;
 }
-
-.body{
-  display: flex;
-  align-items: center;
-  justify-content:center ;
-  min-height:50vh;
-  background: #34495e;
-}
-
-.container{
-  max-width: 1440px;
-  margin: 0 auto;
-  background: #5d6d7e;
-  padding-bottom: 4rem;
-}
-
-.container img{
-  display: block;
-  width: 80%;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
-}
-
-.container .card_content{
-  display: flex;
-  padding: 6rem 2.5rem;
-}
-
-.cards{
-  width: 100%;
-  position: relative;
-}
-
-.cards .title1{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: rgba(255, 255, 255, 0.7);
-  width: 80%;
-  text-align: center;
-  padding: 0.4rem;
-}
-
-.content{
-  background:#fff;
-  text-align: center;
-  position: absolute;
-  padding: 1rem 0;
-  width: 80%;
-}
-
-.social_icons{
-
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0.5rem 2rem;
-  align-items: center;
-  font-size: 1.5rem;
-}
-
-.social_icons i{
-  color: #34495e;
-}  
 
 /* .services-info{
 width: 65%;
