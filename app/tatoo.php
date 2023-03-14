@@ -9,17 +9,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-  </script>
+  </script> -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
   </script>
+
+
   <!-- Font Awesome -->
 <link
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -51,6 +56,10 @@ rel="stylesheet"
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <link href="..\includes\css\tatoo_session.css" rel="stylesheet">
+
+<link href="..\includes\css\tatoo.css" rel="stylesheet">
+<!-- <script src="..\includes\js\tatoo.js"></script> -->
+
 </head>
 
 <header>
@@ -80,6 +89,7 @@ rel="stylesheet"
     </div>
   </nav>
 </header>
+
 
 <div class="header">
  </div>
@@ -126,6 +136,119 @@ rel="stylesheet"
 
 
 <body>
+
+<div class="container text-center my-3">
+    <h2 class="font-weight-light">FEATURED SERVICES</h2>
+    <div class="row mx-auto my-auto">
+        <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+            <div class="carousel-inner w-100" role="listbox">
+                <div class="carousel-item active">
+                    <div class="col-md-4">
+                        <div class="card_image">
+                            <img class="img-fluid" src="..\app\saloon\medium-hairstyles-3">
+                            <div class="product-action">
+                                <div class="product-action-style"> <a href="#"> <i class="fa fa-plus"></i> </a> <a href="#"> <i
+                                    class="fa fa-heart"></i> </a> <a href="#"> <i class="fa fa-shopping-cart"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card_image">
+                            <img class="img-fluid" src="..\app\saloon\mens-long-hairstyles-1">
+                            <div class="product-action">
+                                <div class="product-action-style"> <a href="#"> <i class="fa fa-plus"></i> </a> <a href="#"> <i
+                                    class="fa fa-heart"></i> </a> <a href="#"> <i class="fa fa-shopping-cart"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card_image">
+                            <img class="img-fluid" src="..\app\saloon\short-haircuts-1-3">
+                            <div class="product-action">
+                                <div class="product-action-style"> <a href="#"> <i class="fa fa-plus"></i> </a> <a href="#"> <i
+                                    class="fa fa-heart"></i> </a> <a href="#"> <i class="fa fa-shopping-cart"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card_image">
+                            <img class="img-fluid" src="..\app\saloon\undercut-styles-6">
+                            <div class="product-action">
+                                <div class="product-action-style"> <a href="#"> <i class="fa fa-plus"></i> </a> <a href="#"> <i
+                                    class="fa fa-heart"></i> </a> <a href="#"> <i class="fa fa-shopping-cart"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card_image">
+                            <img class="img-fluid" src="http://placehold.it/380?text=5">
+                            <div class="product-action">
+                                <div class="product-action-style"> <a href="#"> <i class="fa fa-plus"></i> </a> <a href="#"> <i
+                                    class="fa fa-heart"></i> </a> <a href="#"> <i class="fa fa-shopping-cart"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card_image">
+                            <img class="img-fluid" src="http://placehold.it/380?text=6">
+                            <div class="product-action">
+                                <div class="product-action-style"> <a href="#"> <i class="fa fa-plus"></i> </a> <a href="#"> <i
+                                    class="fa fa-heart"></i> </a> <a href="#"> <i class="fa fa-shopping-cart"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+<script >
+  $('#recipeCarousel').carousel({
+    interval: 10000
+  })
+  
+  $('.carousel .carousel-item').each(function(){
+      var minPerSlide = 3;
+      var next = $(this).next();
+      if (!next.length) {
+      next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+      
+      for (var i=0;i<minPerSlide;i++) {
+          next=next.next();
+          if (!next.length) {
+              next = $(this).siblings(':first');
+            }
+          
+          next.children(':first-child').clone().appendTo($(this));
+        }
+  });
+</script>
 
 <div class="main">
   <h1>Tatoo session</h1>
