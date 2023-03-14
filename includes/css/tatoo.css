@@ -36,14 +36,21 @@
 @import url(https://fonts.googleapis.com/css?family=Calibri:400,300,700);
 
 
-.card_image,
+.card-image,
 .img-fluid {
     overflow: hidden;
-    position: relative
+    position: relative;
+    height: 300px;
+    width: 300px;
+
 }
 
 .mb-45 {
     margin-bottom: 45px
+}
+
+.mt-100 {
+  margin-top: 100px
 }
 
 .product-action {
@@ -56,7 +63,7 @@
     transition: all 0.6s ease 0s
 }
 
-.card_image {
+.card-image {
     border-radius: 10px
 }
 
@@ -94,7 +101,7 @@
     font-size: 18px
 }
 
-.card_image:hover .product-action {
+.card-image:hover .product-action {
     bottom: 20px;
     opacity: 1
 }
@@ -130,3 +137,4 @@
   .carousel-control-next i {
     margin-right: -4px;
   }		
+

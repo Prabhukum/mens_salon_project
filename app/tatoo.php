@@ -142,29 +142,33 @@ rel="stylesheet"
     <div class="row mx-auto my-auto">
         <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
             <div class="carousel-inner w-100" role="listbox">
-              <?php
-                $statement = $pdo->prepare("SELECT * FROM tbl_product WHERE p_is_featured=? AND p_is_active=?");
-                // $statement = $pdo->prepare("SELECT * FROM tbl_product");
-                $statement->execute(array(1,1));
-                $result = $statement->fetchAll(PDO::FETCH_ASSOC);                            
-                foreach ($result as $row) {
-              ?>
+         
                 <div class="carousel-item active">
                     <div class="col-md-4">
-                        <div class="card_image">
-                            <img class="img-fluid" src="..\app\saloon\<?php echo $row['p_featured_photo']; ?>">
-                            <div class="product-action">
-                                <div class="product-action-style"> <a href="#"> <i class="fa fa-plus"></i> </a> <a href="#"> <i
-                                    class="fa fa-heart"></i> </a> <a href="#"> <i class="fa fa-shopping-cart"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="col-md-4">
-                        <div class="card_image">
+                        <div class="card-image">
+                            <!-- <img class="img-fluid" src="..\app\saloon\<?php echo $row['p_featured_photo']; ?>"> -->
+                            <div class="card-image mb-45 text-center">
+                         <div class="img-fluid">    <!-- <a href="#" data-abc="true"> -->
                             <img class="img-fluid" src="..\app\saloon\mens-long-hairstyles-1.jpg">
+                            </a> <span><i class="fa fa-rupee"></i> 41,000</span>
+                            <div class="product-action">
+                                <div class="product-action-style"> <a href="#"> <i class="fa fa-plus"></i> </a> <a href="#"> <i
+                                    class="fa fa-heart"></i> </a> <a href="#"> <i class="fa fa-shopping-cart"></i> </a>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card-image">
+                        <div class="card-image mb-45 text-center">
+                         <div class="img-fluid"> 
+                            <img class="img-fluid" src="..\app\saloon\mens-long-hairstyles-1.jpg">
+                            </a> <span><i class="fa fa-rupee"></i> 41,000</span>
                             <div class="product-action">
                                 <div class="product-action-style"> <a href="#"> <i class="fa fa-plus"></i> </a> <a href="#"> <i
                                     class="fa fa-heart"></i> </a> <a href="#"> <i class="fa fa-shopping-cart"></i> </a>
@@ -172,10 +176,12 @@ rel="stylesheet"
                             </div>
                         </div>
                     </div>
+                    </div>
+                        </div>
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-4">
-                        <div class="card_image">
+                        <div class="card-image">
                             <img class="img-fluid" src="..\app\saloon\short-haircuts-1-3.jpg">
                             <div class="product-action">
                                 <div class="product-action-style"> <a href="#"> <i class="fa fa-plus"></i> </a> <a href="#"> <i
@@ -187,7 +193,7 @@ rel="stylesheet"
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-4">
-                        <div class="card_image">
+                        <div class="card-image">
                             <img class="img-fluid" src="..\app\saloon\undercut-styles-6.jpg">
                             <div class="product-action">
                                 <div class="product-action-style"> <a href="#"> <i class="fa fa-plus"></i> </a> <a href="#"> <i
@@ -199,7 +205,7 @@ rel="stylesheet"
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-4">
-                        <div class="card_image">
+                        <div class="card-image">
                             <img class="img-fluid" src="..\app\saloon\short-haircuts-1-3.jpg">
                             <div class="product-action">
                                 <div class="product-action-style"> <a href="#"> <i class="fa fa-plus"></i> </a> <a href="#"> <i
@@ -211,7 +217,7 @@ rel="stylesheet"
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-4">
-                        <div class="card_image">
+                        <div class="card-image">
                             <img class="img-fluid" src="..\app\saloon\undercut-styles-6.jpg">
                             <div class="product-action">
                                 <div class="product-action-style"> <a href="#"> <i class="fa fa-plus"></i> </a> <a href="#"> <i
@@ -230,9 +236,7 @@ rel="stylesheet"
                 <i class="fa fa-angle-right"></i>
                 <span class="sr-only">Next</span>
             </a>
-            <?php
-              }
-            ?>		
+           		
         </div>
     </div>
 </div>
@@ -351,7 +355,10 @@ rel="stylesheet"
   </ul>
 </div>
 </div>  
-<h3 class="made_by">Made with ♡</h3>
+<footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a> &middot;  <a href="#">Contact Us</a></p>
+  </footer>
 
 </body>
 </html>
