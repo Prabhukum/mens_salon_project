@@ -145,7 +145,7 @@ rel="stylesheet"
                 <div class="carousel-item active">
                     <div class="col-md-4">
                         <div class="card_image">
-                            <img class="img-fluid" src="..\app\saloon\medium-hairstyles-3">
+                            <img class="img-fluid" src="..\app\saloon\medium-hairstyles-3.jpg">
                             <div class="product-action">
                                 <div class="product-action-style"> <a href="#"> <i class="fa fa-plus"></i> </a> <a href="#"> <i
                                     class="fa fa-heart"></i> </a> <a href="#"> <i class="fa fa-shopping-cart"></i> </a>
@@ -157,7 +157,7 @@ rel="stylesheet"
                 <div class="carousel-item">
                     <div class="col-md-4">
                         <div class="card_image">
-                            <img class="img-fluid" src="..\app\saloon\mens-long-hairstyles-1">
+                            <img class="img-fluid" src="..\app\saloon\mens-long-hairstyles-1.jpg">
                             <div class="product-action">
                                 <div class="product-action-style"> <a href="#"> <i class="fa fa-plus"></i> </a> <a href="#"> <i
                                     class="fa fa-heart"></i> </a> <a href="#"> <i class="fa fa-shopping-cart"></i> </a>
@@ -169,7 +169,7 @@ rel="stylesheet"
                 <div class="carousel-item">
                     <div class="col-md-4">
                         <div class="card_image">
-                            <img class="img-fluid" src="..\app\saloon\short-haircuts-1-3">
+                            <img class="img-fluid" src="..\app\saloon\short-haircuts-1-3.jpg">
                             <div class="product-action">
                                 <div class="product-action-style"> <a href="#"> <i class="fa fa-plus"></i> </a> <a href="#"> <i
                                     class="fa fa-heart"></i> </a> <a href="#"> <i class="fa fa-shopping-cart"></i> </a>
@@ -181,7 +181,7 @@ rel="stylesheet"
                 <div class="carousel-item">
                     <div class="col-md-4">
                         <div class="card_image">
-                            <img class="img-fluid" src="..\app\saloon\undercut-styles-6">
+                            <img class="img-fluid" src="..\app\saloon\undercut-styles-6.jpg">
                             <div class="product-action">
                                 <div class="product-action-style"> <a href="#"> <i class="fa fa-plus"></i> </a> <a href="#"> <i
                                     class="fa fa-heart"></i> </a> <a href="#"> <i class="fa fa-shopping-cart"></i> </a>
@@ -193,7 +193,7 @@ rel="stylesheet"
                 <div class="carousel-item">
                     <div class="col-md-4">
                         <div class="card_image">
-                            <img class="img-fluid" src="http://placehold.it/380?text=5">
+                            <img class="img-fluid" src="..\app\saloon\short-haircuts-1-3.jpg">
                             <div class="product-action">
                                 <div class="product-action-style"> <a href="#"> <i class="fa fa-plus"></i> </a> <a href="#"> <i
                                     class="fa fa-heart"></i> </a> <a href="#"> <i class="fa fa-shopping-cart"></i> </a>
@@ -205,7 +205,7 @@ rel="stylesheet"
                 <div class="carousel-item">
                     <div class="col-md-4">
                         <div class="card_image">
-                            <img class="img-fluid" src="http://placehold.it/380?text=6">
+                            <img class="img-fluid" src="..\app\saloon\undercut-styles-6.jpg">
                             <div class="product-action">
                                 <div class="product-action-style"> <a href="#"> <i class="fa fa-plus"></i> </a> <a href="#"> <i
                                     class="fa fa-heart"></i> </a> <a href="#"> <i class="fa fa-shopping-cart"></i> </a>
