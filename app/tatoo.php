@@ -216,11 +216,13 @@ rel="stylesheet"
                 </div>
             </div>
             <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
-            <i class="fa fa-angle-left"></i>
+            <!-- <i class="fa fa-angle-left"></i> -->
+            <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
-            <i class="fa fa-angle-right"></i>
+            <!-- <i class="fa fa-angle-right"></i> -->
+            <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
         </div>
