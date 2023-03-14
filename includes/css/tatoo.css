@@ -98,3 +98,35 @@
     bottom: 20px;
     opacity: 1
 }
+
+.carousel-control-prev, .carousel-control-next {
+    height: 44px;
+    width: 40px;
+    background: #ffc10773;
+    margin: auto -25px;
+    border-radius: 4px;
+    opacity: 0.8;
+  }
+  .carousel-control-prev:hover, .carousel-control-next:hover {
+    background: #f8bb03e1;
+    opacity: 1;
+  }
+  .carousel-control-prev i, .carousel-control-next i {
+    font-size: 36px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: -19px 0 0 0;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    color: #f8f8f8;
+    text-shadow: none;
+    font-weight: bold;
+  }
+  .carousel-control-prev i {
+    margin-left: -2px;
+  }
+  .carousel-control-next i {
+    margin-right: -4px;
+  }		
