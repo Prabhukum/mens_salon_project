@@ -146,14 +146,15 @@ rel="stylesheet"
                 <div class="carousel-item active">
                     <div class="col-md-4">
                         <div class="card-image">
-                            <!-- <img class="img-fluid" src="..\app\saloon\<?php echo $row['p_featured_photo']; ?>"> -->
                             <div class="card-image mb-45 text-center">
-                         <div class="img-fluid">    <!-- <a href="#" data-abc="true"> -->
-                            <img class="img-fluid" src="..\app\saloon\mens-long-hairstyles-1.jpg">
-                            </a> <span><i class="fa fa-rupee"></i> 41,000</span>
-                            <div class="product-action">
-                                <div class="product-action-style"> <a href="#"> <i class="fa fa-plus"></i> </a> <a href="#"> <i
-                                    class="fa fa-heart"></i> </a> <a href="#"> <i class="fa fa-shopping-cart"></i> </a>
+                              <div class="img-fluid">
+                                 <img class="img-fluid"  src="..\app\saloon\mens-long-hairstyles-1.jpg">
+                                   <span class="product-action" class="product-action-style"><i class="fa fa-rupee"></i> 41,000</span>
+                              <div class="product-action">
+                                <div class="product-action-style">
+                                   <a href="#">   <i class="fa fa-plus"></i> </a>
+                                   <a href="#">   <i class="fa fa-heart"></i> </a>
+                                   <a href="#">   <i class="fa fa-shopping-cart"></i> </a>
                                 </div>
                             </div>
                           </div>
