@@ -218,15 +218,22 @@ rel="stylesheet"
 <div class="main">
   <h1>Tatoo session</h1>
   <ul class="cards">
+  <?php
+    $statement = $pdo->prepare("SELECT * FROM tbl_product");
+    // $statement = $pdo->prepare("SELECT * FROM tbl_product");
+    $statement->execute();
+    $result = $statement->fetchAll(PDO::FETCH_ASSOC);      
+    foreach ($result as $row) {
+  ?>
     <li class="cards_item">
       <div class="card">
         <div class="card_image">
-        <img src="..\app\saloon\pexels-dmitry-zvolskiy-1805600.jpg"></div>
+        <img src="saloon/<?php echo $row['p_featured_photo']; ?>"></div>
          <div class="card_content">
-          <h2 class="card_title">Card Grid Layout</h2>
-          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <p class="item-price strike item-price1 "><strike>₹ 500<?php echo $row['p_old_price']; ?></strike> <b>
-            <?php echo $row['p_current_price']; ?>₹ 55/- </b></p>
+          <h2 class="card_title"><?php echo $row['p_name']; ?></h2>
+          <p class="card_text"><?php echo $row['p_description']; ?></p>
+          <!-- <p class="card_text"><?php echo $row['p_short_description']; ?></p> -->
+          <p class="item-price strike item-price1"><strike>₹<?php echo $row['p_old_price']; ?></strike> <b><?php echo $row['p_current_price']; ?> </b></p>
           <button class="btn-small-ser mt-2" type="button"> Book now </button>
           <a href="#" class="btn-small-ser mt-2">Add to Cart</a>
                          
@@ -234,75 +241,9 @@ rel="stylesheet"
         </div>
       </div>
     </li>
-    <li class="cards_item">
-      <div class="card">
-        <div class="card_image"><img src="..\app\saloon\pexels-dmitry-zvolskiy-1805600.jpg"></div>
-        <div class="card_content">
-          <h2 class="card_title">Card Grid Layout</h2>
-          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <p class="item-price strike item-price1 "><strike>₹ 500<?php echo $row['p_old_price']; ?></strike> <b>
-            <?php echo $row['p_current_price']; ?>₹ 55/- </b></p>
-          <button class="btn-small-ser mt-2" type="button"> Book now </button>
-          <a href="#" class="btn-small-ser mt-2">Add to Cart</a>
-                         
-        </div>
-      </div>
-    </li>
-    <li class="cards_item">
-      <div class="card">
-        <div class="card_image"><img src="..\app\saloon\pexels-dmitry-zvolskiy-1805600.jpg"></div>
-        <div class="card_content">
-          <h2 class="card_title">Card Grid Layout</h2>
-          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <p class="item-price strike item-price1 "><strike>₹ 500<?php echo $row['p_old_price']; ?></strike> <b>
-            <?php echo $row['p_current_price']; ?>₹ 55/- </b></p>
-          <button class="btn-small-ser mt-2" type="button"> Book now </button>
-          <a href="#" class="btn-small-ser mt-2">Add to Cart</a>
-                         
-        </div>
-      </div>
-    </li>
-    <li class="cards_item">
-      <div class="card">
-        <div class="card_image"><img src="..\app\saloon\pexels-gabriel-lara-3657562.jpg"></div>
-        <div class="card_content">
-          <h2 class="card_title">Card Grid Layout</h2>
-          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <p class="item-price strike item-price1 "><strike>₹ 500<?php echo $row['p_old_price']; ?></strike> <b>
-            <?php echo $row['p_current_price']; ?>₹ 55/- </b></p>
-          <button class="btn-small-ser mt-2" type="button"> Book now </button>
-          <a href="#" class="btn-small-ser mt-2">Add to Cart</a>
-        </div>
-      </div>
-    </li>
-    <li class="cards_item">
-      <div class="card">
-        <div class="card_image"><img src="..\app\saloon\pexels-cottonbro-studio-4125587.jpg"></div>
-        <div class="card_content">
-          <h2 class="card_title">Card Grid Layout</h2>
-          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <p class="item-price strike item-price1 "><strike>₹ 500<?php echo $row['p_old_price']; ?></strike> <b>
-            <?php echo $row['p_current_price']; ?>₹55/- </b></p>
-         
-          <button class="btn-small-ser mt-2" type="button"> Book now </button>
-          <a href="#" class="btn-small-ser mt-2">Add to Cart</a>
-                         
-        </div>
-      </div>
-    </li>
-    <li class="cards_item">
-      <div class="card">
-        <div class="card_image"><img src="..\app\saloon\pexels-dmitry-zvolskiy-1805600.jpg"></div>
-        <div class="card_content">
-          <h2 class="card_title">Card Grid Layout</h2>
-          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <p class="item-price strike item-price1 "><strike>₹ 500<?php echo $row['p_old_price']; ?></strike> <b>
-            <?php echo $row['p_current_price']; ?>₹ 55/- </b></p>
-          <button class="btn-small-ser mt-2" type="button"> Book now </button>
-          <a href="#" class="btn-small-ser mt-2">Add to Cart</a>             
-        </div>
-      </div>
-    </li>
+    <?php
+      }
+    ?>	
   </ul>
 </div>
 </div>  
