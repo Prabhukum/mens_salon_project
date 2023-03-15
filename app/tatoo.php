@@ -143,9 +143,8 @@ rel="stylesheet"
         <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
             <div class="carousel-inner w-100" role="listbox">
               <?php
-                $statement = $pdo->prepare("SELECT * FROM tbl_product WHERE p_is_featured=? AND p_is_active=?");
-                // $statement = $pdo->prepare("SELECT * FROM tbl_product");
-                $statement->execute(array(1,1));
+                $statement = $pdo->prepare("SELECT * FROM tbl_product where ecat_id =? AND p_is_featured=? AND p_is_active=?");
+                $statement->execute(array(200,1,1));
                 $result = $statement->fetchAll(PDO::FETCH_ASSOC);     
                 $i = 0;                         
                 foreach ($result as $row) {
@@ -219,8 +218,8 @@ rel="stylesheet"
   <h1>Tatoo session</h1>
   <ul class="cards">
   <?php
-    $statement = $pdo->prepare("SELECT * FROM tbl_product");
-    // $statement = $pdo->prepare("SELECT * FROM tbl_product");
+    $statement = $pdo->prepare("SELECT * FROM tbl_product where ecat_id =? AND p_is_active=?");
+    $statement->execute(array(200,1));
     $statement->execute();
     $result = $statement->fetchAll(PDO::FETCH_ASSOC);      
     foreach ($result as $row) {
