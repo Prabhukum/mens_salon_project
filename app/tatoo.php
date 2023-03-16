@@ -201,7 +201,11 @@
 </div>  
 <footer class="container">
     <p class="float-end"><a href="#">Back to top</a></p>
-    <p>&copy; 2021–2023 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a> &middot;  <a href="#">Contact Us</a></p>
+    <p>&copy; @2023 Menslook Company, Inc. &middot; 
+      <a href="https://www.instagram.com/"><span><i class="fa fa-instagram"></span></i> </a> &middot;  
+      <a href="https://www.facebook.com/"><span><i class="fa fa-facebook"></span></i></a> &middot;  
+      <a href="https://wa.me/"><span><i class="fa fa-whatsapp"></span></i></a>   &middot; 
+      <a href="#">Who we are?</a></p>
   </footer>
 
 </body>

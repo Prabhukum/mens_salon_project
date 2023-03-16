@@ -48,8 +48,8 @@ transform: translateX(0);
  .img-fluid:hover {
   overflow: hidden;
   position: relative;
-  -webkit-filter: blur(2px);
-  filter: blur(2px);
+  /* -webkit-filter: blur(2px);
+  filter: blur(2px); */
 width:235px; 
 
 }
