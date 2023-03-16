@@ -96,8 +96,8 @@
         <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
             <div class="carousel-inner w-100" role="listbox">
               <?php
-                $statement = $pdo->prepare("SELECT * FROM tbl_product where ecat_id =? AND p_is_featured=? AND p_is_active=?");
-                $statement->execute(array(200,1,1));
+                $statement = $pdo->prepare("SELECT * FROM tbl_product where ecat_id =? AND p_is_featured=?");
+                $statement->execute(array(300,1));
                 $result = $statement->fetchAll(PDO::FETCH_ASSOC);     
                 $i = 0;                         
                 foreach ($result as $row) {
@@ -112,7 +112,7 @@
                         <div class="card-image">
                             <div class="card-image mb-45 text-center">
                          <div class="img-fluid">
-                              <img class="img-fluid" src="saloon\<?php echo $row['p_featured_photo']; ?>">
+                              <img class="img-fluid" src="saloon\300x300\<?php echo $row['p_featured_photo']; ?>">
                               <div class="cost-featured">
                                   <span><i class="fa fa-rupee"></i><?php echo $row['p_current_price']; ?></span>
                               </div>
