@@ -18,6 +18,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../includes/css/hair_cut_for_men.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.dataTables.min.js"></script>
+	<script src="js/dataTables.bootstrap.min.js"></script>
+	<script src="js/select2.full.min.js"></script>
+	<script src="js/jquery.inputmask.js"></script>
+	<script src="js/jquery.inputmask.date.extensions.js"></script>
+	<script src="js/jquery.inputmask.extensions.js"></script>
+	<script src="js/moment.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/icheck.min.js"></script>
+	<script src="js/fastclick.js"></script>
+	<script src="js/jquery.sparkline.min.js"></script>
+	<script src="js/jquery.slimscroll.min.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<script src="js/app.min.js"></script>
+	<script src="js/jscolor.js"></script>
+	<script src="js/on-off-switch.js"></script>
+    <script src="js/on-off-switch-onload.js"></script>
+    <script src="js/clipboard.min.js"></script>
+	<script src="js/demo.js"></script>
+	<script src="js/summernote.js"></script>
+
     <style>
       .form-control {
         color: #000000;
@@ -82,6 +106,81 @@ if(isset($_GET['get_pid'])){
             alert("*** Record added to Database ***");
          </script>';
   }
+
+  $valid = 1;
+
+  $path = $_FILES['p_featured_photo']['name'];
+  $path_tmp = $_FILES['p_featured_photo']['tmp_name'];
+
+  if($path!='') {
+      $ext = pathinfo( $path, PATHINFO_EXTENSION );
+      $file_name = basename( $path, '.' . $ext );
+      if( $ext!='jpg' && $ext!='png' && $ext!='jpeg' && $ext!='gif' ) {
+          $valid = 0;
+          $error_message .= 'You must have to upload jpg, jpeg, gif or png file<br>';
+      }
+  }
+
+
+  if($valid == 1) {
+
+    if( isset($_FILES['photo']["name"]) && isset($_FILES['photo']["tmp_name"]) )
+      {
+
+        $photo = array();
+          $photo = $_FILES['photo']["name"];
+          $photo = array_values(array_filter($photo));
+
+        $photo_temp = array();
+          $photo_temp = $_FILES['photo']["tmp_name"];
+          $photo_temp = array_values(array_filter($photo_temp));
+
+        $statement = $pdo->prepare("SHOW TABLE STATUS LIKE 'tbl_product_photo'");
+    $statement->execute();
+    $result = $statement->fetchAll();
+    foreach($result as $row) {
+      $next_id1=$row[10];
+    }
+    $z = $next_id1;
+
+          $m=0;
+          for($i=0;$i<count($photo);$i++)
+          {
+              $my_ext1 = pathinfo( $photo[$i], PATHINFO_EXTENSION );
+          if( $my_ext1=='jpg' || $my_ext1=='png' || $my_ext1=='jpeg' || $my_ext1=='gif' ) {
+              $final_name1[$m] = $z.'.'.$my_ext1;
+                  move_uploaded_file($photo_temp[$i],"../app/saloon/product_photos/".$final_name1[$m]);
+                  $m++;
+                  $z++;
+          }
+          }
+
+          if(isset($final_name1)) {
+            for($i=0;$i<count($final_name1);$i++)
+          {
+            $statement = $pdo->prepare("INSERT INTO tbl_product_photo (photo,p_id) VALUES (?,?)");
+            $statement->execute(array($final_name1[$i],$_REQUEST['id']));
+          }
+          }            
+      }
+
+      if($path == '') {
+        $statement = $pdo->prepare("Update tbl_product SET p_name = '$fetched_p_name',p_old_price = '$fetched_p_old_price',p_current_price = '$fetched_p_current_price',p_qty = '$fetched_p_qty',p_featured_photo = '$fetched_p_featured_photo',p_description = '$fetched_p_description',p_short_description = '$fetched_p_short_description',p_feature = '$fetched_p_feature',p_service_time = '$fetched_p_service_time',p_total_view = '$fetched_p_total_view',p_is_featured = '$fetched_p_is_featured',p_is_active = '$fetched_p_is_active',ecat_id = '$fetched_ecat_id' where p_id = '$fetched_p_id'");
+        $statement->execute();
+      } else {
+
+        unlink('../app/saloon/'.$_POST['current_photo']);
+
+    $final_name = 'product-featured-'.$_REQUEST['id'].'.'.$ext;
+        move_uploaded_file( $path_tmp, '../app/saloon/'.$final_name );
+
+        $statement = $pdo->prepare("Update tbl_product SET p_name = '$fetched_p_name',p_old_price = '$fetched_p_old_price',p_current_price = '$fetched_p_current_price',p_qty = '$fetched_p_qty',p_featured_photo = '$final_name',p_description = '$fetched_p_description',p_short_description = '$fetched_p_short_description',p_feature = '$fetched_p_feature',p_service_time = '$fetched_p_service_time',p_total_view = '$fetched_p_total_view',p_is_featured = '$fetched_p_is_featured',p_is_active = '$fetched_p_is_active',ecat_id = '$fetched_ecat_id' where p_id = '$fetched_p_id'");
+        $statement->execute();
+      }
+      $success_message = 'Product is updated successfully.';
+  }
+
+
 }
 else {
   $statement = $pdo->prepare("INSERT INTO `tbl_product` (`p_id`, `p_name`, `p_old_price`, `p_current_price`, `p_qty`, `p_featured_photo`, `p_description`, `p_short_description`, `p_feature`, `p_service_time`, `p_total_view`, `p_is_featured`, `p_is_active`, `ecat_id`) VALUES 
@@ -162,7 +261,7 @@ if(isset($_POST["fetched_p_id_delete"])){
 <?php
 
 if($_POST["form-reset"]) {
-  echo "test";
+
 }
 
 ?>
@@ -197,6 +296,9 @@ if($_POST["form-reset"]) {
       <div class="form-group">
         <tr><td><label>Product Current Price</label></td><td><input type="text" class="form-control" name="fetched_p_current_price" value="<?php echo $row["p_current_price"]; ?>"></td></tr>
       </div>
+
+
+  
       <div class="form-group">
         <tr><td><label>Product Image</label></td><td><input type="text" class="form-control" name="fetched_p_featured_photo" value="<?php echo $row["p_featured_photo"]; ?>"></td></tr>
       </div>
@@ -259,6 +361,51 @@ if($_POST["form-reset"]) {
       <div class="form-group">
         <tr><td><label>Product Current Price</label></td><td><input type="text" class="form-control" name="fetched_p_current_price" value="<?php echo $row["p_current_price"]; ?>"></td></tr>
       </div>
+
+      <div class="form-group">
+        <label for="" class="col-sm-3 control-label">Existing Featured Photo</label>
+        <div class="col-sm-4" style="padding-top:4px;">
+          <img src="../app/saloon/<?php echo $p_featured_photo; ?>" alt="" style="width:150px;">
+          <input type="hidden" name="current_photo" value="<?php echo $p_featured_photo; ?>">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="" class="col-sm-3 control-label">Change Featured Photo </label>
+        <div class="col-sm-4" style="padding-top:4px;">
+          <input type="file" name="p_featured_photo">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="" class="col-sm-3 control-label">Other Photos</label>
+        <div class="col-sm-4" style="padding-top:4px;">
+          <table id="ProductTable" style="width:100%;">
+            <tbody>
+              <?php
+                $_REQUEST['id'] = $row["p_id"];
+                $statement = $pdo->prepare("SELECT * FROM tbl_product_photo WHERE p_id=?");
+                $statement->execute(array($_REQUEST['id']));
+                $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+                foreach ($result as $row) {
+              ?>
+              <tr>
+                <td>
+                    <img src="../app/saloon/product_photos/<?php echo $row['photo']; ?>" alt="" style="width:150px;margin-bottom:5px;">
+                </td>
+                <td style="width:28px;">
+                  <a onclick="return confirmDelete();" href="product-other-photo-delete.php?id=<?php echo $row['pp_id']; ?>&id1=<?php echo $_REQUEST['id']; ?>" class="btn btn-danger btn-xs">X</a>
+                </td>
+              </tr>
+              <?php
+                }
+              ?>
+            </tbody>
+        </table>
+        </div>
+        <div class="col-sm-2">
+          <input type="button" id="btnAddNew" value="Add Item" style="margin-top: 5px;margin-bottom:10px;border:0;color: #fff;font-size: 14px;border-radius:3px;" class="btn btn-warning btn-xs">
+        </div>
+      </div>
+
       <div class="form-group">
         <tr><td><label>Product Image</label></td><td><input type="text" class="form-control" name="fetched_p_featured_photo" value="<?php echo $row["p_featured_photo"]; ?>"></td></tr>
       </div>
@@ -299,6 +446,34 @@ if($_POST["form-reset"]) {
         document.getElementByName("fetched_p_is_featured").innerHTML = x;
       }
       </script>
+
+    <script>
+          $("#btnAddNew").click(function () {
+
+          var rowNumber = $("#ProductTable tbody tr").length;
+
+          var trNew = "";              
+
+          var addLink = "<div class=\"upload-btn" + rowNumber + "\"><input type=\"file\" name=\"photo[]\"  style=\"margin-bottom:5px;\"></div>";
+              
+          var deleteRow = "<a href=\"javascript:void()\" class=\"Delete btn btn-danger btn-xs\">X</a>";
+
+          trNew = trNew + "<tr> ";
+
+          trNew += "<td>" + addLink + "</td>";
+          trNew += "<td style=\"width:28px;\">" + deleteRow + "</td>";
+
+          trNew = trNew + " </tr>";
+
+          $("#ProductTable tbody").append(trNew);
+
+      });
+
+      $('#ProductTable').delegate('a.Delete', 'click', function () {
+          $(this).parent().parent().fadeOut('slow').remove();
+          return false;
+      });
+    </script>
       <?php
         }
       ?>
@@ -307,8 +482,38 @@ if($_POST["form-reset"]) {
 <br>
 <br>
   <button type="submit" class="btn btn-primary" onclick="getRadioBtnValue()">Add / Update Record</button>
-</form>
 
+  <div class="form-group">
+    <label for="" class="col-sm-3 control-label">Featured Photo <span>*</span></label>
+    <div class="col-sm-4" style="padding-top:4px;">
+      <input type="file" name="p_featured_photo">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="" class="col-sm-3 control-label">Other Photos</label>
+    <div class="col-sm-4" style="padding-top:4px;">
+      <table id="ProductTable" style="width:100%;">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="upload-btn">
+                                    <input type="file" name="photo[]" style="margin-bottom:5px;">
+                                </div>
+                            </td>
+                            <td style="width:28px;"><a href="javascript:void()" class="Delete btn btn-danger btn-xs">X</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+    </div>
+    <div class="col-sm-2">
+                <input type="button" id="btnAddNew" value="Add Item" style="margin-top: 5px;margin-bottom:10px;border:0;color: #fff;font-size: 14px;border-radius:3px;" class="btn btn-warning btn-xs">
+            </div>
+  </div>
+
+  </form>
+  </div>
 </div>
+
+
 </body>
 </html>
