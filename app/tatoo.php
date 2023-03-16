@@ -75,11 +75,11 @@ rel="stylesheet"
             <!-- <?php
           if(!$_SESSION['id']) {
             echo '          <li class="nav-item">
-            <a class="nav-link mr-15"href="login.php">Login/signUp <img src="app\icons\user.png" width="20" height="20" alt=""></i></a>
+            <a class="nav-link mr-15"href="../login.php">Login/signUp <img src="app\icons\user.png" width="20" height="20" alt=""></i></a>
           </li>';
           } else {
             echo '          <li class="nav-item">
-            <a class="nav-link "href="logout.php">LogOut</a>
+            <a class="nav-link "href="../logout.php">LogOut</a>
           </li>';
           }
           ?> -->
