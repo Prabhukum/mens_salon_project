@@ -23,8 +23,8 @@
   .img-fluid {
     overflow: hidden;
     position: relative;
-    height: 40vh;
-    width: 40vh; 
+    height: 260px;
+    width: 260px; 
   
   }
 }
@@ -34,9 +34,8 @@
   .img-fluid {
     overflow: hidden;
     position: relative;
-    height: 40vh;
-    width: 40vh; 
-  
+    height: 310px;
+    width: 310px;   
   }
 }
 
