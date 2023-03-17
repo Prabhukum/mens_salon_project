@@ -14,8 +14,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-
 }
 
 .bg-nav {
@@ -33,7 +31,6 @@ body {
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  padding: 1rem;
   font-family:'Times New Roman', Times, serif;
 }
 
