@@ -18,7 +18,18 @@
   }
 }
 
-@media (min-width: 380px) {
+@media (min-width: 375px) {
+  .card-image,
+  .img-fluid {
+    overflow: hidden;
+    position: relative;
+    height: 34vh;
+    width: 34vh; 
+  
+  }
+}
+
+@media (min-width: 425px) {
   .card-image,
   .img-fluid {
     overflow: hidden;
