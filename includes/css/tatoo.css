@@ -7,6 +7,64 @@
   }
 }
 
+@media (max-width: 330px) {
+  .card-image,
+  .img-fluid {
+    overflow: hidden;
+    position: relative;
+    height: 27vh;
+    width: 27vh; 
+  
+  }
+}
+
+@media (min-width: 380px) {
+  .card-image,
+  .img-fluid {
+    overflow: hidden;
+    position: relative;
+    height: 40vh;
+    width: 40vh; 
+  
+  }
+}
+
+@media (min-width: 768px) {
+  .card-image,
+  .img-fluid {
+    overflow: hidden;
+    position: relative;
+    height: 50vh;
+    width: 50vh; 
+  
+  }
+  .card-image{
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-image,
+  .img-fluid {
+    overflow: hidden;
+    position: relative;
+    height: 35vh;
+    width: 35vh; 
+  
+  }
+}
+
+@media (min-width: 1440px) {
+  .card-image,
+  .img-fluid {
+    overflow: hidden;
+    position: relative;
+    height: 42vh;
+    width:42vh; 
+
+  }
+}
+
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev {
@@ -30,28 +88,18 @@
 .carousel-inner .carousel-item-right,
 .carousel-inner .carousel-item-left{ 
 transform: translateX(0);
+
 }
 
 
 @import url(https://fonts.googleapis.com/css?family=Calibri:400,300,700);
 
-
-.card-image,
-.img-fluid {
-  overflow: hidden;
-  position: relative;
-  height: 250px;
-  width:235px; 
-
-}
 /* for blur effect on add session */
  .img-fluid:hover {
   overflow: hidden;
   position: relative;
   /* -webkit-filter: blur(2px);
   filter: blur(2px); */
-width:235px; 
-
 }
 
 .mb-45 {
@@ -90,7 +138,8 @@ padding: 3px 3px 3px;
 }
 
 .card-image:hover  .cost-featured{
-opacity: 1
+opacity: 0
+  /* Disabled */
 }
 
 .card-image {
@@ -131,8 +180,7 @@ opacity: 1
 
 .card-image:hover .product-action{
   bottom: 20px;
-  opacity: 0; 
-  /* Disabled */
+  opacity: 1; 
 }
 
 
