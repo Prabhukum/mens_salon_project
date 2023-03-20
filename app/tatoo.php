@@ -35,7 +35,7 @@
 </head>
 
 <header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-nav">
+  <nav class="navbar navbar-expand-md navbar-dark  d-flex  fixed-relative bg-nav">
     <div class="container-fluid">
       <a class="navbar-brand " href="#"> <img src="..\app\saloon\favicon.ico" width="30" height="30" alt=""> Men's Saloon</a>
       <div class="collapse navbar-collapse" id="navbarCollapse">

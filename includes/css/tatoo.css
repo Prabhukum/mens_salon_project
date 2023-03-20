@@ -5,6 +5,7 @@
   .carousel-inner .carousel-item > div:first-child {
       display: block;
   }
+  
 }
 
 @media (max-width: 330px) {
@@ -14,7 +15,7 @@
     position: relative;
     height: 27vh;
     width: 27vh; 
-  
+
   }
 }
 
@@ -23,9 +24,8 @@
   .img-fluid {
     overflow: hidden;
     position: relative;
-    height: 270px;
-    width: 270px; 
-  
+ 
+    
   }
 }
 
@@ -34,22 +34,39 @@
   .img-fluid {
     overflow: hidden;
     position: relative;
-    height: 320px;
-    width: 320px;   
+    height: 30vh;
+    /* width: 320px;    */
+    margin: auto;
+    border-radius: 14px;
+
   }
+  
+ 
 }
 
-@media (min-width: 768px) {
+
+@media (min-width: 768px ) {
   .card-image,
   .img-fluid {
     overflow: hidden;
     position: relative;
-    height: 50vh;
-    width: 50vh; 
-  
+    height: 30vh;
+    /* width: 50vh;  */
+   
   }
+  .carousel-control-prev-768px, 
+  .carousel-control-next-768px {
+    height: 44px;
+    width: 40px;
+    background: #000000;
+    border-radius: 4px;
+    opacity: 0.8;
+ 
+  }
+  
   .card-image{
-    margin-left: 50px;
+    /* margin-left: 50px; */
+    
   }
 }
 
@@ -59,7 +76,7 @@
     overflow: hidden;
     position: relative;
     height: 35vh;
-    width: 35vh; 
+    /* width: 35vh;  */
   
   }
 }
@@ -71,7 +88,7 @@
     position: relative;
     height: 42vh;
     width:42vh; 
-
+   
   }
 }
 
@@ -102,12 +119,14 @@ transform: translateX(0);
 }
 
 
+
 @import url(https://fonts.googleapis.com/css?family=Calibri:400,300,700);
 
 /* for blur effect on add session */
  .img-fluid:hover {
   overflow: hidden;
   position: relative;
+  
   /* -webkit-filter: blur(2px);
   filter: blur(2px); */
 }
@@ -155,6 +174,15 @@ opacity: 0
 .card-image {
   border-radius: 10px
 }
+.carousel-control-prev, .carousel-control-next {
+  height: 44px;
+  width: 40px;
+  background: #ffc10773;
+  margin: auto -25px;
+  border-radius: 4px;
+  opacity: 0.8;
+}
+
 
 .img-fluid>span {
   background-color: #fff;
@@ -195,14 +223,7 @@ opacity: 0
 
 
 
-.carousel-control-prev, .carousel-control-next {
-  height: 44px;
-  width: 40px;
-  background: #ffc10773;
-  margin: auto -25px;
-  border-radius: 4px;
-  opacity: 0.8;
-}
+
 .carousel-control-prev:hover, .carousel-control-next:hover {
   background: #f8bb03e1;
   opacity: 1;
