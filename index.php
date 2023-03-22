@@ -154,6 +154,7 @@
         $result = $statement->fetchAll(PDO::FETCH_ASSOC);  
         $i = 0;                         
         foreach ($result as $row) {
+          .
           if($i == 0 || $i == 3){
             echo ' <div class="container-fluid marketing" id="scrolldown"><div class="row services">';
           }
