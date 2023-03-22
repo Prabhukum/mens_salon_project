@@ -6,9 +6,9 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #000000;
-  /* background-image: url("./saloon/pexels-pixabay-326347.jpg");
+   background-image: url("\saloon\close-up-man-selfcare-products.png");
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover; 
   font-size: smaller;
   font-family: 'Poppins', sans-serif;
   background-size: cover;
@@ -58,6 +58,8 @@ body {
 
 
   }
+  
+
 }
 @media (min-width: 800px) {
   .carousel-item {
@@ -196,6 +198,8 @@ body {
   height: auto;
 }
 
+
+/* bootstrap css */
 
 
 

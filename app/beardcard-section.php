@@ -181,7 +181,9 @@ rel="stylesheet"
                     foreach ($result as $row) {
                   ?>
                 <div class="item"><div class="thumb-wrapper bg-dark">
-                         
+                <div class="py-3 bg-white">
+          <div class="container w-100">
+            <div class="card shadow card-body ">    
                   <div class="img-box">
                     <img src="saloon/<?php echo $row['p_featured_photo']; ?>" class="img-fluid" alt="<?php echo $row['p_name']; ?>">									
                   </div>
@@ -199,7 +201,9 @@ rel="stylesheet"
          
                     <a href="#" class="btn btn-primary btn-small">Add to Cart</a>
                   </div>						
-                </div></div>
+                </div>
+                
+              </div>
 
                 <?php
                     }
