@@ -158,9 +158,8 @@
             echo ' <div class="container-fluid marketing" id="scrolldown"><div class="row services">';
           }
       ?>      
-      
-       <div class="col-lg-4 mt-5">
-        <div class="py-3 bg-primary">
+           <div class="col-lg-4 mt-5">
+        <div class="py-3 bg-white">
           <div class="container w-100">
             <div class="card shadow card-body ">
                <div>
@@ -176,6 +175,12 @@
         </div>
       </div>
 
+      <!-- <div class="col-lg-4 mt-5">
+          <a href="app/<?php echo $row['s_link']; ?>"><img src="app/saloon/<?php echo $row['s_image']; ?>" class="rounded mb-2" width="240" height="240" alt=""></a>  
+          <h2 class="mt-lg-3"><?php echo $row['s_name']; ?></h2>
+          <p class="mt-lg-4 px-lg-5"><?php echo $row['s_desc']; ?></p>
+          <p><a class="btn btn-dark mt-lg-2" href="app/<?php echo $row['s_link']; ?>">View details &raquo;</a></p>
+        </div> -->
 
      <?php
           if($i == 2 || $i == 5){
