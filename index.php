@@ -158,12 +158,24 @@
             echo ' <div class="container-fluid marketing" id="scrolldown"><div class="row services">';
           }
       ?>      
-        <div class="col-lg-4 mt-5">
-          <a href="app/<?php echo $row['s_link']; ?>"><img src="app/saloon/<?php echo $row['s_image']; ?>" class="rounded mb-2" width="240" height="240" alt=""></a>  
-          <h2 class="mt-lg-3"><?php echo $row['s_name']; ?></h2>
-          <p class="mt-lg-4 px-lg-5"><?php echo $row['s_desc']; ?></p>
-          <p><a class="btn btn-dark mt-lg-2" href="app/<?php echo $row['s_link']; ?>">View details &raquo;</a></p>
+      
+       <div class="col-lg-4 mt-5">
+        <div class="py-3 bg-primary">
+          <div class="container w-100">
+            <div class="card shadow card-body ">
+               <div>
+                 <a href="app/<?php echo $row['s_link']; ?>"><img src="app/saloon/<?php echo $row['s_image']; ?>" class="rounded mb-2" width="220" height="220" alt=""></a>  
+               </div>
+                    <div>
+                      <h2 class="mt-lg-3"><?php echo $row['s_name']; ?></h2>
+                        <p class="mt-lg-4 px-lg-5"><?php echo $row['s_desc']; ?></p>
+                        <p><a class="btn btn-dark mt-lg-2" href="app/<?php echo $row['s_link']; ?>">View details &raquo;</a></p>
+                   </div>
+              </div>
+          </div>
         </div>
+      </div>
+
 
      <?php
           if($i == 2 || $i == 5){
@@ -207,7 +219,7 @@
 
     <hr class="featurette-divider">
 
-    <div class="row featurette"> <!-- image container backgound -->
+    <!-- <div class="row featurette"> image container backgound -->
       <div class="col-md-7">
         <h2 class="featurette-heading" class="rounded">And lastly,<a href="head massage page"><kbd>Head massage</kbd></a><span class="text-muted">Checkmate.</span></h2>
         <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>

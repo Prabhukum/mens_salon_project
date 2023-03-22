@@ -3,7 +3,447 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
 /* Design */
-.cardimage{
+*,
+*::before,
+*::after {
+  /* box-sizing: border-box; */
+} 
+.bg{
+  background-image:url("");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    
 }
+
+.bg-nav {
+   background-color: #383838;
+   font-family: cursive;
+   color:#e1e4dc;
+}
+
+body {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../../app/saloon/close-up-yellow-smoke-against-black-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #e1e4dc;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-family:'Times New Roman', Times, serif;
+  
+}
+
+.item-price1 {
+  font-size: 13px;
+  padding: 2px 0;
+  color:#e1e4dc ;
+  font-family: 'Lucida Handwriting', sans-serif;
+  
+}
+.item-price strike {
+  opacity: 0.7;
+  margin-right: 5px;
+  color:#e1e4dc;
+  font-family: 'Lucida Handwriting', sans-serif;
+}
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    color:#e1e4dc;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.book-btn{
+    color: #eeeeeec2 ;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: none;
+    border: 1px solid #f6fe0063;
+    padding: 15px 14px;
+    margin-top: 5px;
+    line-height: 16px;
+    border-radius: 50px;
+    font-family: 'Lucida Handwriting', sans-serif;
+  }
+  .book-btn:hover {
+    color: #eeeeeec2 ;
+    background: #e6ee0144;
+    box-shadow: none;
+    font-family: 'Lucida Handwriting', sans-serif;
+  }
+  .btn-small-ser {
+    color: #eeeeeec2 ;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: none;
+    border: 1px solid #f6fe0063;
+    padding: 6px 14px;
+    margin-top: 5px;
+    line-height: 16px;
+    border-radius: 35px;
+    font-family: 'Lucida Handwriting', sans-serif;
+  }
+  .btn-small-ser:hover {
+    color:#eeeeeec2 ;
+    background:#83850fce ; /*  #7ac400; */
+    box-shadow: none;
+    font-family: 'Lucida Handwriting', sans-serif;
+  }
+  /* For small devices button */
+  
+  .btn-small {
+    color:  #7ac400;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: none;
+    font-family: 'Lucida Handwriting', sans-serif;
+    border: 1px solid #f6fe0063;
+    padding: 6px 14px;
+    margin-top: 5px;
+    line-height: 13px;
+    border-radius: 20px;
+  }
+  .btn-small:focus {
+    color: #e1e4dc;
+    background: #7ac400;
+    box-shadow: none;
+    font-family: 'Lucida Handwriting', sans-serif;
+  }
+
+
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #00000000;
+
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;  border-radius: 50px;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;  border-radius: 50px;
+  }
+}
+
+.card {
+  /* background-color: transparent; */
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(255, 243, 243, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;  border-radius: 50px;
+  background: transparent; 
+}
+
+.card_content {
+  padding: 1rem;
+   background: #41420382;   /*#ffffff00 #868585 30%,  #0f0f0f 100%  */
+  /* background: transparent; */
+}
+.card_title {
+  color: #e1e4dc;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #e1e4dc;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+.made_by{
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+    
+  }
+  
+  @media (max-width: 330px) {
+    .card-image,
+    .img-fluid {
+      overflow: hidden;
+      position: relative;
+      height: 27vh;
+      width: 27vh; 
+  
+    }
+  }
+  
+  @media (min-width: 375px) {
+    .card-image,
+    .img-fluid {
+      overflow: hidden;
+      position: relative;
+   
+      
+    }
+  }
+  
+  @media (min-width: 425px) {
+    .card-image,
+    .img-fluid {
+      overflow: hidden;
+      position: relative;
+      height: 30vh;
+      /* width: 320px;    */
+      margin: auto;
+      border-radius: 14px;
+  
+    }
+    
+   
+  }
+  
+  
+  @media (min-width: 768px ) {
+    .card-image,
+    .img-fluid {
+      overflow: hidden;
+      position: relative;
+      height: 30vh;
+      /* width: 50vh;  */
+     
+    }
+    .carousel-control-prev-768px, 
+    .carousel-control-next-768px {
+      height: 44px;
+      width: 40px;
+      background: #000000;
+      border-radius: 4px;
+      opacity: 0.8;
+   
+    }
+    
+    .card-image{
+      /* margin-left: 50px; */
+      
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .card-image,
+    .img-fluid {
+      overflow: hidden;
+      position: relative;
+      height: 35vh;
+      /* width: 35vh;  */
+    
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    .card-image,
+    .img-fluid {
+      overflow: hidden;
+      position: relative;
+      height: 42vh;
+      width:42vh; 
+     
+    }
+  }
+  
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: flex;
+  }
+  
+  /* display 3 */
+  @media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+  }
+  
+  .carousel-inner .carousel-item-right,
+  .carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+  
+  }
+  
+  
+  
+  @import url(https://fonts.googleapis.com/css?family=Calibri:400,300,700);
+  
+  /* for blur effect on add session */
+   .img-fluid:hover {
+    overflow: hidden;
+    position: relative;
+    
+    /* -webkit-filter: blur(2px);
+    filter: blur(2px); */
+  }
+  
+  .mb-45 {
+    margin-bottom: 45px
+  }
+  
+  .mt-100 {
+  margin-top: 100px
+  }
+  
+  .product-action {
+    bottom: 0px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    transition: all 0.6s ease 0s
+  }
+  
+  
+  .cost-featured {
+  bottom: 180px;
+  left: 18px;
+  opacity: 0;
+  position: absolute;
+  right: 100;
+  text-align: center;
+  transition: all 0.6s ease 0s;
+  color: #fff;
+  opacity: 0;
+  background-color: #808080;
+  box-shadow: 0 0 4px 1.7px #ffc107e0;
+  display: inline-block;
+  padding: 3px 3px 3px;
+  }
+  
+  .card-image:hover  .cost-featured{
+  opacity: 0
+    /* Disabled */
+  }
+  
+  .card-image {
+    border-radius: 10px
+  }
+  .carousel-control-prev, .carousel-control-next {
+    height: 44px;
+    width: 40px;
+    background: #ffc10773;
+    margin: auto -25px;
+    border-radius: 4px;
+    opacity: 0.8;
+  }
+  
+  
+  .img-fluid>span {
+    background-color: #fff;
+    box-shadow: 0 0 8px 1.7px rgba(0, 0, 0, 0.06);
+    color: #333;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    left: 20px;
+    letter-spacing: 1px;
+    padding: 3px 12px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 20px
+  }
+  
+  .product-action-style {
+    background-color: #fff;
+    box-shadow: 0 0 8px 1.7px rgba(0, 0, 0, 0.06);
+    display: inline-block;
+    padding: 16px 2px 12px
+  }
+  
+  .product-action-style>a {
+    color: #979797;
+    line-height: 1;
+    padding: 0 21px;
+    position: relative
+  }
+  
+  
+  
+  .card-image:hover .product-action{
+    bottom: 20px;
+    opacity: 1; 
+  }
+  
+  
+  
+  
+  .carousel-control-prev:hover, .carousel-control-next:hover {
+    background: #f8bb03e1;
+    opacity: 1;
+  }
+  .carousel-control-prev i, .carousel-control-next i {
+    font-size: 36px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: -19px 0 0 0;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    color: #f8f8f8;
+    text-shadow: none;
+    font-weight: bold;
+  }
+  .carousel-control-prev i {
+    margin-left: -2px;
+  }
+  .carousel-control-next i {
+    margin-right: -4px;
+  }
+  
+  
+  
