@@ -161,14 +161,14 @@
          <div class="col-lg-4 mt-5">
         <div class="py-3 bg-white">
           <div class="container w-100">
-            <div class="card shadow card-body ">
+            <div class="card shadow card-body1">
                <div>
-                 <a href="app/<?php echo $row['s_link']; ?>"><img src="app/saloon/<?php echo $row['s_image']; ?>" class="rounded mb-2" width="220" height="220" alt=""></a>  
+                 <a href="app/<?php echo $row['s_link']; ?>"><img src="app/saloon/<?php echo $row['s_image']; ?>" class="roundeds mt-4" width="220" height="220" alt=""></a>  
                </div>
                     <div>
                       <h2 class="mt-lg-3"><?php echo $row['s_name']; ?></h2>
                         <p class="mt-lg-4 px-lg-5"><?php echo $row['s_desc']; ?></p>
-                        <p><a class="btn btn-dark mt-lg-2" href="app/<?php echo $row['s_link']; ?>">View details &raquo;</a></p>
+                        <p><a class="btn btn-dark mt-lg-2 mb-3" href="app/<?php echo $row['s_link']; ?>">View details &raquo;</a></p>
                    </div>
               </div>
           </div>

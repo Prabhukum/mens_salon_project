@@ -100,6 +100,16 @@ body {
   }
 }
 
+.card-body1 {
+  /* flex: 1 1 auto;
+   padding:var(--mdb-card-spacer-y) var(--mdb-card-spacer-x);  */
+  color: var(--mdb-card-color);
+}
+
+.roundeds{
+  border-radius: var(--mdb-border-radius)!important;
+  margin-top: 22px;
+}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
