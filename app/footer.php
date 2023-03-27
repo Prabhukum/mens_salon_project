@@ -105,21 +105,21 @@ textarea.form-control {
                     <a href="#">Home</a>
                     <a href="#">Agents</a>
                     <a href="#">About</a>
-                    <a href="#">Area</a>
+                    <a href="#">Location</a>
                     <a href="#">Blog</a>
                     <a href="#">Contact Us.</a>
                 </p>
                 <ul class="ftco-footer-social p-0">
-        <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="ion-logo-twitter"></span></a></li>
-        <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="ion-logo-facebook"></span></a></li>
-        <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="ion-logo-instagram"></span></a></li>
+        <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-whatsapp"></span></a></li>
+        <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
+        <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>
     </ul>
             </div>
         </div>
         <div class="row mt-5">
             <div class="col-md-12 text-center">
                 <p class="copyright">
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ion-ios-heart" aria-hidden="true"></i> by <a href="#" target="_blank">Menslook.in</a>
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This page is all about <i class="ion-ios-heart" aria-hidden="true"></i> <a href="#" target="_blank">Menslook.in</a>
         </p>
             </div>
         </div>
