@@ -26,7 +26,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 
     <link rel="stylesheet" href="includes\css\carousel.css">
-
+    
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
