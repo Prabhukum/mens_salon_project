@@ -108,8 +108,8 @@ textarea.form-control {
                 </p>
                 <ul class="ftco-footer-social p-0">
         <li class="ftco-animate"><a href="https://wa.me/<7418407250>" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-whatsapp"></span></a></li>
-        <li class="ftco-animate"><a href="https://www.instagram.com/accounts/login/" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
-        <li class="ftco-animate"><a href="https://www.facebook.com/accounts/login/" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>
+        <li class="ftco-animate"><a href="https://www.facebook.com/accounts/login/" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
+        <li class="ftco-animate"><a href="https://www.instagram.com/accounts/login/" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>
     </ul>
             </div>
         </div>
