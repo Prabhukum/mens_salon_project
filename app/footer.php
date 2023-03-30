@@ -100,11 +100,12 @@ textarea.form-control {
                 <h2 class="footer-heading"><a href="#" class="logo">Menslook.in</a></h2>
                 <p class="menu">
                     <a href="#">Home</a>
-                    <a href="#">Agents</a>
-                    <a href="#">About</a>
+                    <a href="#">About Us</a>
                     <a href="#">Location</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact Us.</a>
+                    <a href="#">Contact Us</a>
+                    <a href="https://www.freeprivacypolicy.com/live/a127dbb0-9c70-4619-b65d-f9693da7f082">Terms & Conditions</a>
+                    <a href="https://www.freeprivacypolicy.com/live/90396af7-1d6f-430d-9816-8f87d1c281d2">Return & Refund Policy</a>
+                    <a href="https://www.freeprivacypolicy.com/live/53de0fff-fff6-4143-a796-4829bb1a9261">Privacy Policy</a>
                 </p>
                 <ul class="ftco-footer-social p-0">
         <li class="ftco-animate"><a href="https://wa.me/<7418407250>" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-whatsapp"></span></a></li>
