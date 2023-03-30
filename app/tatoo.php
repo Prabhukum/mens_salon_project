@@ -186,8 +186,8 @@
           <p class="card_text"><?php echo $row['p_description']; ?></p>
           <!-- <p class="card_text"><?php echo $row['p_short_description']; ?></p> -->
           <p class="item-price strike item-price1"><strike>₹<?php echo $row['p_old_price']; ?></strike> <b>₹<?php echo $row['p_current_price']; ?> </b></p>
-          <button class="btn-small-ser mt-2" type="button"> Book now </button>
-          <a href="#" class="btn-small-ser mt-2">Add to Cart</a>
+          <a href="app\booknow.php"> <button class="btn-small-ser mt-2 bg-white" type="button">Book now</a> </button>
+          <a href="app\booknow.php" class="btn-small-ser mt-2  bg-white">Add to Cart</a>
                          
                          
         </div>

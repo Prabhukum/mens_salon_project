@@ -30,10 +30,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <link href="..\includes\css\tatoo_session.css" rel="stylesheet">
 
-  <link href="..\includes\css\tatoo.css" rel="stylesheet">
-
+  <link href="..\includes\css\beard.css" rel="stylesheet">
 </head>
-
+<script>
+ 
+</script>
 <header>
   <nav class="navbar navbar-expand-md navbar-dark  d-flex  fixed-relative bg-nav">
     <div class="container-fluid">
@@ -186,7 +187,49 @@
           <p class="card_text"><?php echo $row['p_description']; ?></p>
           <!-- <p class="card_text"><?php echo $row['p_short_description']; ?></p> -->
           <p class="item-price strike item-price1"><strike>₹<?php echo $row['p_old_price']; ?></strike> <b>₹<?php echo $row['p_current_price']; ?> </b></p>
-          <button class="btn-small-ser mt-2" type="button"> Book now </button>
+          <!-- <button class="btn-small-ser mt-2" type="button"> Book now </button> -->
+        
+        
+          <!-- Button trigger modal -->
+          <div class="container">
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Add to cart
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        hi
+        <hr class="my-lg-4 my-sm-2">
+      </div>
+      <div class="modal-body">
+      hello
+        <hr class="my-lg-4 my-sm-2">
+      </div>
+      <div class="modal-body">
+      hw r u
+        <hr class="my-lg-4 my-sm-2">
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">confirm</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
           <a href="#" class="btn-small-ser mt-2">Add to Cart</a>
                          
                          
